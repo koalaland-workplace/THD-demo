@@ -10,9 +10,10 @@ Bộ tài liệu trình bày trực tuyến của **Thái Hưng Đường — Ng
 
 | | Tài liệu | Nội dung |
 |---|---|---|
-| 🏠 | [**Trang chính**](https://koalaland-workplace.github.io/THD-demo/) | Điểm vào — giới thiệu tổng quan và dẫn tới hai tài liệu |
+| 🏠 | [**Trang chính**](https://koalaland-workplace.github.io/THD-demo/) | Điểm vào — giới thiệu tổng quan và dẫn tới ba tài liệu |
 | 📘 | [**Bản đồ đề án tổng thể 2026–2035**](https://koalaland-workplace.github.io/THD-demo/THD_De_An_Tong_The.html) | Toàn cảnh chiến lược: kiến trúc, 12 chương nghiệp vụ, lộ trình 18 tháng |
 | 🖥️ | [**Demo nền tảng vận hành**](https://koalaland-workplace.github.io/THD-demo/THD_Demo_Nen_Tang_Van_Hanh.html) | Bản demo tương tác — một nền tảng, năm cánh cửa |
+| ⚙️ | [**Khung chuẩn hóa Dữ liệu · Quy trình · Đào tạo**](https://koalaland-workplace.github.io/THD-demo/THD_Chuan_Hoa_Du_Lieu.html) | Hạng mục cần làm — 15 mục quy chuẩn, ba đợt triển khai |
 
 Không cần cài đặt gì. Mở bằng trình duyệt trên laptop, tablet hoặc điện thoại.
 
@@ -79,6 +80,31 @@ Hai ranh giới quản trị được thể hiện rõ ngay trong giao diện:
 
 ---
 
+## ⚙️ Tài liệu 03 — Khung chuẩn hóa Dữ liệu · Quy trình · Đào tạo
+
+**Đây là hạng mục cần làm** — phần móng của hai tài liệu trên. Chuẩn hóa không phải công việc kỹ thuật: mỗi trường dữ liệu được định nghĩa đúng, mỗi quy trình được chép theo khung, mỗi khóa học được đo bằng chuẩn đầu ra là một mảnh tri thức của người thầy được giữ lại ở dạng truyền được cho người sau.
+
+### Mười lăm mục, ba khối
+
+| Khối | Mục |
+|---|---|
+| **Dữ liệu** | 01 Sáu nguyên tắc quản trị · 02 Kiến trúc 4 lớp · 03 Hệ mã định danh · 04 Từ điển dữ liệu · 05 Chuẩn kỹ thuật & định dạng · 06 Phân loại mật & ma trận phân quyền |
+| **Quy trình** | 07 SOP 8 mảng — chuẩn hóa Sổ Gia Quy · 08 Quy trình kỹ thuật chăm sóc (khung 7 phần) · 09 Bộ chỉ số kết quả 0·30·90 |
+| **Đào tạo** | 10 Khung năng lực 5 bậc · 11 Phân nhóm chương trình A–D · 12 Quy chuẩn học liệu · 13 Đánh giá & chứng nhận |
+| **Triển khai** | 14 Vai trò & trách nhiệm dữ liệu · 15 Lộ trình chuẩn hóa |
+
+### Ba đợt bám theo năm cổng kiểm soát
+
+| Đợt | Thời gian | Mở khóa |
+|---|---|---|
+| **ĐỢT 1 · NỀN** | T1–T3 (trước GĐ0) | Health OS ghi liệu chuẩn từ ca đầu tiên → đủ điều kiện qua **cổng G1** |
+| **ĐỢT 2 · VẬN HÀNH** | T4–T15 (GĐ1) | Re-cert & Academy 2.0 chạy được, registry ≥1.000 hồ sơ → **cổng G3** |
+| **ĐỢT 3 · NHÂN BẢN** | T16–T18 (GĐ2) | Nhượng quyền cấp A/B, đề tài nghiên cứu đầu tiên → **cổng G4** |
+
+> ⚠️ **Rủi ro nếu chậm chuẩn hóa:** mỗi trung tâm tự đặt tên, tự ghi kiểu riêng → hợp nhất sau này tốn gấp nhiều lần; nghìn ca vẫn không công bố được; không đóng gói nhượng quyền được.
+
+---
+
 ## 📁 Cấu trúc thư mục
 
 ```
@@ -86,7 +112,10 @@ Hai ranh giới quản trị được thể hiện rõ ngay trong giao diện:
 ├── index.html                        # Trang chính — điểm vào cho đối tác
 ├── THD_De_An_Tong_The.html           # Tài liệu 01 — Bản đồ đề án tổng thể
 ├── THD_Demo_Nen_Tang_Van_Hanh.html   # Tài liệu 02 — Demo nền tảng vận hành
+├── THD_Chuan_Hoa_Du_Lieu.html        # Tài liệu 03 — Khung chuẩn hóa
 └── assets/
+    ├── logo-thd.jpg                  # Logo dùng cho trang chính
+    ├── favicon.png                   # Icon trình duyệt
     └── video-chich-le.mp4            # Video phương pháp chích lễ
 ```
 

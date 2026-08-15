@@ -55,6 +55,8 @@ img{max-width:100%;display:block}
 .dropdown i{font-size:10.5px;color:var(--muted);display:block;font-style:normal}
 .home-btn{background:rgba(255,255,255,.10);color:#CFE0D4;font-weight:700;font-size:10.5px;padding:7px 11px;border-radius:7px;white-space:nowrap;letter-spacing:.05em;text-decoration:none;display:inline-flex;align-items:center;gap:5px}
 .home-btn:hover{background:rgba(255,255,255,.18);color:#fff}
+.std-btn{background:transparent;border:1px solid rgba(201,162,39,.55);color:var(--gold-l);font-weight:700;font-size:10.5px;padding:6px 11px;border-radius:7px;white-space:nowrap;letter-spacing:.05em;text-decoration:none;display:inline-flex;align-items:center;gap:5px}
+.std-btn:hover{background:rgba(201,162,39,.16);color:#fff}
 .demo-btn{background:var(--gold);color:var(--deep);font-weight:800;font-size:10.5px;padding:7px 12px;border-radius:7px;white-space:nowrap;letter-spacing:.05em;text-decoration:none;display:inline-flex;align-items:center;gap:5px}
 .demoband{background:linear-gradient(115deg,var(--primary),#2C5F3A);border-radius:14px;padding:18px 22px;display:flex;gap:18px;align-items:center;margin-top:16px;color:#fff;flex-wrap:wrap}
 .demoband .dt{flex:1;min-width:260px}
@@ -122,6 +124,16 @@ td b{color:var(--primary)}
 .tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:9px}
 
 /* CALLOUT */
+.docref{display:flex;gap:14px;align-items:center;background:linear-gradient(115deg,var(--primary),#2C5F3A);color:#fff;border-radius:13px;padding:15px 18px;margin:16px 0;text-decoration:none;box-shadow:var(--shadow);transition:transform .16s ease,box-shadow .16s ease}
+.docref:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(20,46,29,.24)}
+.docref .di{font-size:26px;flex:none;line-height:1}
+.docref .dx{flex:1}
+.docref .dx b{display:block;font-family:var(--disp);font-size:14px;color:var(--gold-l);letter-spacing:.02em;margin-bottom:3px}
+.docref .dx i{font-style:normal;font-size:12px;color:#D5E1D8;line-height:1.5;display:block}
+.docref .dx .tag{display:inline-block;background:var(--gold);color:var(--deep);font-family:var(--disp);font-size:9px;font-weight:800;letter-spacing:.12em;padding:2px 7px;border-radius:999px;margin-bottom:6px}
+.docref .da{flex:none;font-family:var(--disp);font-size:11px;font-weight:800;color:var(--deep);background:var(--gold);padding:8px 13px;border-radius:8px;white-space:nowrap;letter-spacing:.04em}
+@media(max-width:700px){.docref{flex-direction:column;align-items:flex-start;gap:10px}}
+@media print{.docref{background:var(--gtint);color:var(--ink);border:1px solid var(--gold)}.docref .dx b{color:var(--gold-d)}.docref .dx i{color:var(--muted)}}
 .callout{border-radius:12px;padding:15px 17px;margin:16px 0;font-size:13px;border-left:4px solid}
 .co-gold{background:var(--gtint);border-color:var(--gold);color:#4A3D12}
 .co-green{background:var(--tint);border-color:var(--mid);color:#1F3A28}
@@ -198,7 +210,7 @@ td b{color:var(--primary)}
  .nav .bs{display:none}
 }
 @media print{
- .nav,.print-btn,.home-btn{display:none}
+ .nav,.print-btn,.home-btn,.std-btn{display:none}
  body{background:#fff;font-size:11px}
  .sec{padding:18px 0;break-inside:avoid}
  .card,.kpi,table,.callout{break-inside:avoid}
@@ -237,6 +249,7 @@ td b{color:var(--primary)}
   </div></div>
  </div>
  <a class="home-btn" href="index.html">&#8592; TRANG CHÍNH</a>
+ <a class="std-btn" href="THD_Chuan_Hoa_Du_Lieu.html">&#9881; CHUẨN HÓA</a>
  <a class="demo-btn" href="THD_Demo_Nen_Tang_Van_Hanh.html" target="_blank" rel="noopener">&#9654; DEMO</a>
  <button class="print-btn" onclick="window.print()">IN / PDF</button>
 </div></nav>
@@ -591,6 +604,14 @@ document.querySelectorAll('.dropdown a').forEach(function(a){a.addEventListener(
   <tr><td><b>⑧ Cộng đồng &amp; tri ân</b></td><td>Sinh hoạt học trò; Lễ Nhập Đường; vinh danh; chương trình vì cộng đồng</td><td>Điều phối + khu vực</td><td>Tháng / quý</td></tr>
  </table>
 
+ <a class="docref" href="THD_Chuan_Hoa_Du_Lieu.html">
+  <span class="di">&#9881;</span>
+  <span class="dx"><span class="tag">HẠNG MỤC CẦN LÀM</span>
+   <b>Khung chuẩn hóa Dữ liệu · Quy trình · Đào tạo</b>
+   <i>Tám mảng trên chỉ chạy được khi mỗi mảng có quy trình viết theo cùng một khung. Tài liệu riêng 15 mục: hệ mã định danh, từ điển dữ liệu, khung SOP 7 phần cho Sổ Gia Quy, bộ chỉ số 0·30·90, khung năng lực 5 bậc.</i></span>
+  <span class="da">MỞ TÀI LIỆU →</span>
+ </a>
+
  <h3 style="font-size:14px;color:var(--primary);margin:20px 0 9px">Nhịp quản lý — ngôi nhà tự báo cáo</h3>
  <div class="flow">
   <div class="st"><span class="n">HẰNG NGÀY</span><b>Bản tin một trang</b><span>AI gửi số liệu hôm qua, việc cần chú ý — đọc 15 phút</span></div>
@@ -770,6 +791,15 @@ document.querySelectorAll('.dropdown a').forEach(function(a){a.addEventListener(
  <div class="sec-h"><span class="sec-num">✦</span><div><h2>Lộ trình 18 tháng &amp; năm cổng kiểm soát</h2>
  <p>Người xưa dựng nhà không lợp mái trước khi đắp nền. Bước sau chỉ mở khi bước trước đã vững.</p></div></div>
  <div class="divider"></div>
+
+ <a class="docref" href="THD_Chuan_Hoa_Du_Lieu.html" style="margin-top:0">
+  <span class="di">&#9881;</span>
+  <span class="dx"><span class="tag">HẠNG MỤC CẦN LÀM</span>
+   <b>Khung chuẩn hóa — ba đợt bám theo năm cổng</b>
+   <i>Đợt 1 (T1–T3) là điều kiện của cổng G1 · Đợt 2 (T4–T15) của cổng G3 · Đợt 3 (T16–T18) của cổng G4. Không chốt hệ mã và bộ chỉ số trước ca đầu tiên thì mọi dữ liệu phía sau phải làm lại.</i></span>
+  <span class="da">XEM LỘ TRÌNH →</span>
+ </a>
+
  <table>
   <tr><th>Cổng</th><th>Thời điểm</th><th>Điều kiện phải đạt (đủ TẤT CẢ)</th><th>Mở khóa</th></tr>
   <tr><td><b style="color:var(--red)">G0</b></td><td>Cuối T1</td><td>Website sạch &amp; bảo mật lại; nội dung vượt chuẩn đã gỡ; danh mục từ cấm ban hành</td><td>Được chạy lại truyền thông, chiêu sinh</td></tr>
@@ -790,6 +820,7 @@ document.querySelectorAll('.dropdown a').forEach(function(a){a.addEventListener(
   <li>Ngôi Nhà Trăm Năm — bản trình Người sáng lập</li>
   <li>Phụ lục: 7 bản đồ vận hành</li>
   <li>Roadmap triển khai &amp; chi tiết hạng mục (Excel)</li>
+  <li>Khung chuẩn hóa Dữ liệu · Quy trình · Đào tạo</li>
   <li>Demo nền tảng vận hành (HTML tương tác)</li></ul></div>
  <div><h4>Nguyên tắc nền</h4><ul>
   <li>An toàn trên hết — chuyển viện đúng lúc là thành tích</li>
