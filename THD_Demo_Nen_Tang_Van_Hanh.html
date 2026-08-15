@@ -75,6 +75,41 @@ a{color:var(--mid)}
 }
 .demo-note{background:var(--gold);color:var(--deep);text-align:center;font-size:11px;font-weight:600;letter-spacing:.05em;padding:4px}
 
+
+/* ===== BIỂU ĐỒ (dashboard tầng 2) ===== */
+.chartgrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.chartbox{background:#fff;border:1px solid #ECEAE0;border-radius:12px;padding:14px 16px;box-shadow:var(--shadow)}
+.chartbox h4{font-family:var(--disp);font-size:13px;color:var(--primary);font-weight:700;margin-bottom:2px}
+.chartbox .cap{font-size:11px;color:var(--muted);margin-bottom:12px;display:block}
+.chartbox svg{display:block;width:100%;height:auto;overflow:visible}
+.ckey{display:flex;gap:14px;flex-wrap:wrap;margin-top:10px;font-size:11px;color:var(--muted)}
+.ckey span{display:inline-flex;align-items:center;gap:5px}
+.ckey i{width:9px;height:9px;border-radius:2px;display:inline-block;flex:none}
+/* cột so sánh */
+.barrow{display:flex;align-items:center;gap:10px;margin:7px 0;font-size:11.5px}
+.barrow .bn{width:110px;flex:none;color:var(--ink);font-weight:600}
+.barrow .bt{flex:1;background:var(--tint);border-radius:99px;height:15px;overflow:hidden}
+.barrow .bt i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,var(--mid),var(--soft))}
+.barrow .bv{width:74px;flex:none;text-align:right;color:var(--primary);font-weight:700}
+/* phễu chuyển đổi */
+.funnel{display:flex;flex-direction:column;gap:5px;margin-top:4px}
+.fstep{display:flex;align-items:center;gap:10px;font-size:11.5px}
+.fstep .fb{height:26px;border-radius:6px;background:linear-gradient(90deg,var(--primary),var(--mid));display:flex;align-items:center;padding:0 9px;color:#fff;font-weight:700;font-size:11px;white-space:nowrap}
+.fstep .fl{color:var(--muted)}
+.fstep .fr{margin-left:auto;color:var(--gold-d);font-weight:700;font-size:11px}
+/* danh sách gạch đầu dòng gọn trong panel */
+.tick{list-style:none;display:flex;flex-direction:column;gap:6px;margin-top:8px}
+.tick li{font-size:12px;color:var(--ink);padding-left:17px;position:relative;line-height:1.5}
+.tick li:before{content:"◆";position:absolute;left:0;top:0;color:var(--gold);font-size:8px;line-height:2}
+/* hộp thư chung */
+.inbox{display:flex;flex-direction:column;gap:0}
+.inbox .im{display:flex;gap:10px;align-items:flex-start;padding:10px 0;border-bottom:1px dashed #E7E4D9}
+.inbox .im:last-child{border-bottom:none}
+.inbox .ch{width:26px;height:26px;border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:13px;flex:none;background:var(--tint)}
+.inbox .ib{flex:1;font-size:12px}
+.inbox .ib b{display:block;font-size:12.5px;color:var(--primary)}
+.inbox .ib span{color:var(--muted)}
+
 /* ===== SCREEN SHELLS ===== */
 .screen{display:none}
 .screen.on{display:block;animation:fade .25s ease}
@@ -1374,6 +1409,32 @@ body.dev-phone .bot-panel{position:fixed;left:50%;transform:translateX(-50%);rig
             <div style="font-family:var(--disp);font-size:24px;color:var(--primary);font-weight:700">18.400.000đ</div>
             <div class="legend">Gồm phí thành viên 42 gia đình + dịch vụ + hoa hồng sản phẩm · nền tảng giữ 20% theo gia quy</div></div>
         </div>
+
+        <!-- MONEY -->
+        <div class="aview" id="ctv-money">
+          <div class="acard" style="background:linear-gradient(135deg,var(--primary),#2C5F3A);color:#fff;border:none">
+            <div style="font-size:11px;letter-spacing:.14em;color:var(--gold-l);font-weight:700">THU NHẬP THÁNG 8/2026</div>
+            <div style="font-family:var(--disp);font-size:30px;font-weight:800;margin:4px 0 2px">18.400.000đ</div>
+            <div style="font-size:11.5px;color:#D9E3DB">Dự báo cả tháng theo lịch đã đặt: <b style="color:#fff">23.900.000đ</b></div>
+          </div>
+          <div class="acard"><h4>📋 Từng dòng — hệ thống tự tính theo mỗi ca</h4>
+            <div class="list-line">Phí thành viên · 42 gia đình<span class="r"><b>9.660.000đ</b></span></div>
+            <div class="list-line">Dịch vụ lẻ &amp; liệu trình · 31 ca<span class="r"><b>6.240.000đ</b></span></div>
+            <div class="list-line">Hoa hồng sản phẩm · 7 đơn<span class="r"><b>1.600.000đ</b></span></div>
+            <div class="list-line">Thưởng giới thiệu · 3 gia đình<span class="r"><b>900.000đ</b></span></div>
+            <div class="list-line" style="border-top:1px solid var(--line);padding-top:8px"><b>Tổng trước chia</b><span class="r"><b>23.000.000đ</b></span></div>
+            <div class="list-line" style="opacity:.75">Nền tảng giữ lại (20%)<span class="r">− 4.600.000đ</span></div>
+            <div class="list-line"><b style="color:var(--primary)">Thực nhận (80%)</b><span class="r"><b style="color:var(--primary);font-size:14px">18.400.000đ</b></span></div>
+            <div class="legend" style="margin-top:6px">Tỷ lệ 70–80% cho người thực hành là chính sách tầng 2 — không ai đổi được nếu chưa qua Hội đồng.</div></div>
+          <div class="acard"><h4>🧾 Lịch sử thanh toán &amp; đối soát</h4>
+            <div class="list-line">Tháng 7/2026<span class="r"><b>17.150.000đ</b> <span class="chip ok">Đã chuyển 05/8</span></span></div>
+            <div class="list-line">Tháng 6/2026<span class="r"><b>15.880.000đ</b> <span class="chip ok">Đã chuyển 05/7</span></span></div>
+            <div class="list-line">Tháng 5/2026<span class="r"><b>14.300.000đ</b> <span class="chip ok">Đã chuyển 05/6</span></span></div>
+            <div class="legend" style="margin-top:6px">Mỗi dòng mở ra được bảng kê từng ca — hai bên nhìn chung một bảng số, hết cảnh đối chiếu bằng tin nhắn.</div></div>
+          <div class="acard"><h4>📦 Đặt thiết bị &amp; vật tư — giá nội bộ</h4>
+            <div class="list-line">Bộ vật tư chích lễ · hộp 50<span class="r">340.000đ <button class="btn-small" onclick="demoMsg()">Đặt</button></span></div>
+            <div class="list-line">Máy đo tần số SOLO-FREQ<span class="r">giá nội bộ <button class="btn-small" onclick="demoMsg()">Đặt</button></span></div></div>
+        </div>
         <!-- FAMILIES -->
         <div class="aview" id="ctv-fam">
           <div class="search"><input placeholder="Tìm trong 42 gia đình của tôi…"><button>🔍</button></div>
@@ -1411,6 +1472,26 @@ body.dev-phone .bot-panel{position:fixed;left:50%;transform:translateX(-50%);rig
           <div class="acard"><h4>🏅 Chứng nhận hiện hành</h4>
             <div class="list-line">Người thực hành THD — Bậc 3<span class="r"><span class="chip ok">Hiệu lực đến 6/2027</span></span></div>
             <div class="legend">Chứng nhận gắn kiểm định định kỳ — giữ chuẩn là giữ danh.</div></div>
+          <div class="acard"><h4>🪪 Hồ sơ nghề — trang cá nhân công khai</h4>
+            <div class="list-line">Mã người thực hành<span class="r"><b>THD-PR-0417</b></span></div>
+            <div class="list-line">Trang cá nhân — khách tìm thấy được<span class="r"><span class="chip ok">Đang hiển thị</span></span></div>
+            <div class="list-line">Nhật ký nghề — ca đã thực hiện<span class="r"><b>418 ca</b></span></div>
+            <div class="legend">Chứng nhận có mã tra cứu công khai — hành nghề có danh, không phải làm chui.</div></div>
+          <div class="acard"><h4>🤝 Cộng đồng nghề</h4>
+            <div class="list-line"><b>Nhóm TP.HCM · Bậc 3</b> · 84 thành viên<span class="r"><button class="btn-small" onclick="demoMsg()">Vào nhóm</button></span></div>
+            <div class="list-line"><b>Sinh hoạt chuyên môn</b> · 20/8, 19:30<span class="r"><span class="chip warn">+2 điểm CPD</span></span></div>
+            <div class="list-line"><b>Diễn đàn hỏi ca</b> · 3 câu trả lời mới từ Master<span class="r"><button class="btn-small" onclick="demoMsg()">Xem</button></span></div>
+            <div class="list-line"><b>Lễ Nhập Đường</b> · đợt tháng 10<span class="r"><span class="chip ok">Đã ghi danh</span></span></div>
+            <div class="legend" style="margin-top:6px">Câu hỏi hay được Master trả lời sẽ lưu thành tri thức chung của mạng lưới.</div></div>
+          <div class="acard"><h4>🏆 Bảng vinh danh tháng 8</h4>
+            <div class="list-line">Chăm nhiều hộ nhất<span class="r">Cô Lê Thị Bình · 61 hộ</span></div>
+            <div class="list-line">Outcome tốt nhất<span class="r">Anh Trần Văn Đức · 94%</span></div>
+            <div class="list-line" style="background:var(--gtint);border-radius:8px;padding:7px 9px">Ghi liệu đúng hạn 100%<span class="r"><b>Bạn — hạng 4/318</b></span></div></div>
+          <div class="acard"><h4>📈 Đường phát triển nghề</h4>
+            <div class="list-line">Nhận khách từ hệ thống giới thiệu<span class="r"><b>+3 hộ tháng này</b></span></div>
+            <div class="list-line">Cố vấn khu vực<span class="r"><span class="chip warn">Cần Bậc 4</span></span></div>
+            <div class="list-line">Đăng ký mở trung tâm cấp A/B<span class="r"><button class="btn-small" onclick="demoMsg()">Tìm hiểu</button></span></div>
+            <div class="list-line">Trở thành giảng viên<span class="r"><span class="chip warn">Cần Bậc 4 + CPD đủ</span></span></div></div>
           <div class="acard"><h4>🤝 Giới thiệu &amp; thưởng</h4>
             <div class="list-line">Khách giới thiệu tháng này: 3 gia đình<span class="r"><b>+900.000đ</b></span></div></div>
         </div>
@@ -1419,7 +1500,8 @@ body.dev-phone .bot-panel{position:fixed;left:50%;transform:translateX(-50%);rig
         <button class="on" data-v="ctv-today"><span class="i">📅</span>Hôm nay</button>
         <button data-v="ctv-fam"><span class="i">👪</span>Gia đình</button>
         <button data-v="ctv-proto"><span class="i">📖</span>Quy trình</button>
-        <button data-v="ctv-grow"><span class="i">📈</span>Phát triển</button>
+        <button data-v="ctv-money"><span class="i">💰</span>Thu nhập</button>
+        <button data-v="ctv-grow"><span class="i">🎖</span>Nghề</button>
       </div>
     </div></div>
     <div class="side-note">
@@ -1428,7 +1510,8 @@ body.dev-phone .bot-panel{position:fixed;left:50%;transform:translateX(-50%);rig
         <li><b>Một ngày làm việc trong một màn hình:</b> lịch hẹn, danh mục 42 gia đình, ghi liệu chuẩn 0–30–90.</li>
         <li><b>Tri thức của cô — được bảo vệ:</b> quy trình chỉ XEM theo bậc, có hình mờ bản quyền, không tải xuống, mọi lượt mở đều ghi nhật ký. Học trò dùng tri thức — không sở hữu bản sao.</li>
         <li><b>An toàn đứng trên tất cả:</b> khách khai dấu hiệu đỏ → hệ thống tự khóa quy trình, chỉ hiện hướng dẫn cấp cứu.</li>
-        <li><b>Sống tốt bằng nghề:</b> thu nhập minh bạch từng dòng, lộ trình lên bậc rõ ràng — đúng lời hứa “cùng thắng với người thực hành”.</li>
+        <li><b>Sống tốt bằng nghề:</b> tab Thu nhập tách rõ từng dòng — phí thành viên, dịch vụ, hoa hồng, thưởng — và phần nền tảng giữ lại. Không ai phải hỏi “tháng này tôi được bao nhiêu, vì sao”.</li>
+        <li><b>Không đơn độc:</b> tab Nghề có nhóm theo tỉnh &amp; theo bậc, diễn đàn hỏi ca được Master trả lời, bảng vinh danh và đường lên Cố vấn — trả lời câu hỏi lớn nhất của mọi học viên: <i>“học xong rồi tôi làm gì?”</i></li>
       </ul>
     </div>
   </div>
@@ -1442,6 +1525,8 @@ body.dev-phone .bot-panel{position:fixed;left:50%;transform:translateX(-50%);rig
       <button class="on" data-v="cen-over">📊 Tổng quan</button>
       <button data-v="cen-book">📅 Lịch hẹn</button>
       <button data-v="cen-cus">👪 Khách hàng</button>
+      <button data-v="cen-mkt">📣 Truyền thông &amp; marketing</button>
+      <button data-v="cen-chat">💬 Tư vấn &amp; hỗ trợ</button>
       <button data-v="cen-fin">💼 Doanh thu · chi phí · thuế</button>
       <button data-v="cen-hr">👥 Nhân sự &amp; lương thưởng</button>
       <button data-v="cen-shop">📦 Kho &amp; đặt hàng THD</button>
@@ -1501,6 +1586,57 @@ body.dev-phone .bot-panel{position:fixed;left:50%;transform:translateX(-50%);rig
             <div class="list-line">Điểm hài lòng trung bình<span class="r"><b>4,9/5</b></span></div>
             <div class="list-line">Khách mới từ giới thiệu<span class="r"><b>62%</b><span class="chip ok">nguồn quý nhất</span></span></div>
             <p style="font-size:11.5px;color:var(--muted);margin-top:8px">Xuất dữ liệu ra ngoài bị khóa theo chính sách nền tảng — bảo vệ khách và bảo vệ chính trung tâm.</p></div>
+        </div>
+      </div>
+
+      <div class="dview" id="cen-mkt">
+        <div class="panel"><h3>📣 Truyền thông &amp; marketing <span class="sub">— kho nội dung đã duyệt sẵn, trung tâm chỉ việc đăng</span></h3>
+          <div class="list-line"><b>“Chăm cha mẹ tuổi 70 — năm dấu hiệu”</b> · bài viết + 3 ảnh<span class="r"><span class="chip ok">Đã duyệt</span> <button class="btn-small" onclick="demoMsg()">Đăng</button></span></div>
+          <div class="list-line"><b>“Thông thì bất thống” — video 90 giây</b><span class="r"><span class="chip ok">Đã duyệt</span> <button class="btn-small" onclick="demoMsg()">Đăng</button></span></div>
+          <div class="list-line"><b>Mẫu ưu đãi địa phương — tháng 9</b> · điền tên trung tâm<span class="r"><span class="chip ok">Đã duyệt</span> <button class="btn-small" onclick="demoMsg()">Dùng mẫu</button></span></div>
+          <div class="list-line"><b>Ấn phẩm in — tờ rơi A5 giới thiệu gói gia đình</b><span class="r"><span class="chip ok">Đã duyệt</span> <button class="btn-small" onclick="demoMsg()">Tải bản in</button></span></div>
+          <div class="legend" style="margin-top:8px">Đăng một lần, phát đồng thời lên Facebook · Zalo OA · TikTok của trung tâm. Lịch đăng bài xếp sẵn theo tuần.</div>
+        </div>
+        <div class="two">
+          <div class="panel"><h3>🧱 Gác cổng ngôn từ <span class="sub">— chạy trước khi phát hành</span></h3>
+            <div class="log">🔴 Bài tự soạn của TT chứa cụm <b>“chữa khỏi thoái hóa khớp”</b> → đã chặn, gợi ý thay bằng “hỗ trợ giảm khó chịu vùng khớp”.</div>
+            <div class="log">🟡 Ảnh trước–sau chưa có văn bản đồng ý của khách → tạm giữ, chờ bổ sung.</div>
+            <div class="log">🟢 6 bài đăng trong tuần qua cổng sạch, không cần người can thiệp.</div>
+            <div class="legend" style="margin-top:8px">Ngôn từ &amp; bằng chứng là chính sách tầng 2 — trung tâm không chỉnh sửa được.</div></div>
+          <div class="panel"><h3>📈 Khách đến từ kênh nào <span class="sub">— tháng 8/2026</span></h3>
+            <div class="barrow"><span class="bn">Giới thiệu</span><span class="bt"><i style="width:100%"></i></span><span class="bv">41%</span></div>
+            <div class="barrow"><span class="bn">Zalo OA</span><span class="bt"><i style="width:56%"></i></span><span class="bv">23%</span></div>
+            <div class="barrow"><span class="bn">Facebook</span><span class="bt"><i style="width:46%"></i></span><span class="bv">19%</span></div>
+            <div class="barrow"><span class="bn">Landing TT</span><span class="bt"><i style="width:29%"></i></span><span class="bv">12%</span></div>
+            <div class="barrow"><span class="bn">Khác</span><span class="bt"><i style="width:12%"></i></span><span class="bv">5%</span></div>
+            <div class="legend" style="margin-top:8px">Giới thiệu dẫn đầu — đúng bản chất nghề chăm sóc: người tin người.</div></div>
+        </div>
+      </div>
+
+      <div class="dview" id="cen-chat">
+        <div class="panel"><h3>💬 Hộp thư chung <span class="sub">— tin nhắn từ web, Zalo, Facebook về một chỗ</span></h3>
+          <div class="inbox">
+            <div class="im"><span class="ch">💚</span><div class="ib"><b>Chị Mai · Zalo — 3 phút trước</b><span>“Mẹ em 72 tuổi đau đầu gối, bên mình có nhận chăm tại nhà không ạ?”</span></div><span class="chip ok">AI đã trả lời</span></div>
+            <div class="im"><span class="ch">🌐</span><div class="ib"><b>Anh Dũng · Website — 12 phút trước</b><span>“Giá gói gia đình 4 người bao nhiêu?”</span></div><span class="chip ok">AI đã trả lời</span></div>
+            <div class="im"><span class="ch">🩺</span><div class="ib"><b>Cô Bảy · Facebook — 20 phút trước</b><span>“Tôi đang uống thuốc huyết áp, chích lễ có sao không?”</span></div><span class="chip red">🚨 Van đỏ — chuyển người thật</span></div>
+            <div class="im"><span class="ch">📦</span><div class="ib"><b>Chị Hạnh · Zalo — 41 phút trước</b><span>“Máy đo mua tháng trước báo lỗi E2.”</span></div><span class="chip warn">Chờ kỹ thuật</span></div>
+          </div>
+        </div>
+        <div class="two">
+          <div class="panel"><h3>🤖 Trợ lý AI tư vấn <span class="sub">— hỏi 2–3 câu nhận diện nhu cầu rồi mới đề xuất</span></h3>
+            <ul class="tick">
+              <li>Trả lời trong vài phút, 24/7 — theo kịch bản tư vấn chuẩn, không nói quá.</li>
+              <li>Nhận diện nhu cầu qua 2–3 câu hỏi rồi mới gợi ý dịch vụ phù hợp.</li>
+              <li><b>Van đỏ:</b> câu hỏi y khoa nhạy cảm, dấu hiệu nguy hiểm, khiếu nại → dừng AI, chuyển người thật ngay.</li>
+              <li>Mọi câu trả lời chuyên môn đều trích từ Sổ Gia Quy — có dẫn nguồn.</li>
+            </ul>
+          </div>
+          <div class="panel"><h3>👥 Phân công người chốt <span class="sub">— theo nhánh nhu cầu</span></h3>
+            <div class="list-line">Chăm sóc tại nhà<span class="r"><b>Chị Thu</b> · 4 việc</span></div>
+            <div class="list-line">Liệu trình tại trung tâm<span class="r"><b>Cô Hà</b> · 2 việc</span></div>
+            <div class="list-line">Đăng ký học<span class="r"><b>Anh Nam</b> · 3 việc</span></div>
+            <div class="list-line">Thiết bị &amp; bảo hành<span class="r"><b>Anh Nam</b> · 1 việc</span></div>
+            <div class="legend" style="margin-top:8px">Tin nhắn quá 30 phút chưa ai nhận → hệ thống nhắc quản lý trung tâm.</div></div>
         </div>
       </div>
 
@@ -1649,6 +1785,11 @@ body.dev-phone .bot-panel{position:fixed;left:50%;transform:translateX(-50%);rig
     </nav>
     <div class="dmain">
       <div class="dview on" id="hq-over">
+        <div class="subtabs" id="hqov-tabs">
+          <button class="on" data-s="hqov-t1">① Mười con số — Hội đồng xem 5 phút/tuần</button>
+          <button data-s="hqov-t2">② Theo mảng — điều phối xem hằng tuần</button>
+        </div>
+        <div class="stab on" id="hqov-t1">
         <div class="kpis">
           <div class="kpi"><div class="v">1.548</div><div class="l">gia đình thành viên</div><div class="d up">▲ +6% tháng</div></div>
           <div class="kpi"><div class="v">86%</div><div class="l">tỷ lệ ở lại (retention)</div><div class="d up">▲ mục tiêu ≥70%</div></div>
@@ -1667,6 +1808,62 @@ body.dev-phone .bot-panel{position:fixed;left:50%;transform:translateX(-50%);rig
           <div class="log">🟡 TT Biên Hòa: công suất tuần chỉ 54% (ngưỡng 60%) → Điều phối xử lý theo Sổ Gia Quy Q-07.</div>
           <div class="log">🟡 3 người thực hành sắp hết hạn CPD trong 30 ngày → đã gửi nhắc tự động.</div>
           <div class="log"><b>🔴 1 nội dung bị Gác cổng chặn</b> chờ Master thẩm định (xem mục Gác cổng ngôn từ).</div></div>
+        <div class="legend" style="margin-top:10px">Nguyên tắc dashboard: mỗi chỉ số lệch ngưỡng đều tự sinh một việc cho đúng người, có hạn xử lý. Chỉ số không dẫn tới hành động thì bỏ khỏi bảng.</div>
+        </div>
+
+        <div class="stab" id="hqov-t2">
+          <div class="chartgrid">
+            <div class="chartbox"><h4>Doanh thu 12 tháng — bốn mảng</h4><span class="cap">Triệu đồng · lũy kế toàn hệ thống</span>
+              <svg viewBox="0 0 320 132" role="img" aria-label="Biểu đồ đường doanh thu 12 tháng theo bốn mảng">
+                <line x1="0" y1="112" x2="320" y2="112" stroke="#E7E4D8" stroke-width="1"/>
+                <line x1="0" y1="76" x2="320" y2="76" stroke="#F1EFE6" stroke-width="1"/>
+                <line x1="0" y1="40" x2="320" y2="40" stroke="#F1EFE6" stroke-width="1"/>
+                <polyline fill="none" stroke="#1B3D26" stroke-width="2.2" stroke-linejoin="round" points="6,96 34,92 62,86 90,84 118,76 146,70 174,62 202,55 230,47 258,40 286,32 314,24"/>
+                <polyline fill="none" stroke="#C9A227" stroke-width="2.2" stroke-linejoin="round" points="6,105 34,103 62,99 90,100 118,94 146,88 174,85 202,79 230,74 258,70 286,63 314,58"/>
+                <polyline fill="none" stroke="#4C7A5B" stroke-width="2.2" stroke-linejoin="round" points="6,108 34,107 62,104 90,102 118,101 146,97 174,95 202,92 230,88 258,85 286,81 314,77"/>
+                <polyline fill="none" stroke="#A6402E" stroke-width="2.2" stroke-linejoin="round" points="6,111 34,110 62,110 90,108 118,107 146,105 174,103 202,101 230,98 258,96 286,93 314,90"/>
+                <text x="6" y="128" font-size="8" fill="#6B7268">T9/25</text><text x="286" y="128" font-size="8" fill="#6B7268">T8/26</text>
+              </svg>
+              <div class="ckey"><span><i style="background:#1B3D26"></i>Chăm sóc</span><span><i style="background:#C9A227"></i>Đào tạo</span><span><i style="background:#4C7A5B"></i>Thiết bị</span><span><i style="background:#A6402E"></i>Nền tảng</span></div>
+            </div>
+
+            <div class="chartbox"><h4>Cơ cấu doanh thu — một lần / định kỳ</h4><span class="cap">Mục tiêu doanh thu định kỳ 50–60%</span>
+              <svg viewBox="0 0 320 132" role="img" aria-label="Biểu đồ tròn cơ cấu doanh thu">
+                <circle cx="66" cy="66" r="46" fill="none" stroke="#E9F0EA" stroke-width="22"/>
+                <circle cx="66" cy="66" r="46" fill="none" stroke="#1B3D26" stroke-width="22" stroke-dasharray="158 131" transform="rotate(-90 66 66)"/>
+                <text x="66" y="63" text-anchor="middle" font-family="Montserrat" font-size="20" font-weight="800" fill="#1B3D26">55%</text>
+                <text x="66" y="78" text-anchor="middle" font-size="9" fill="#6B7268">định kỳ</text>
+                <rect x="132" y="34" width="10" height="10" rx="2" fill="#1B3D26"/><text x="149" y="43" font-size="10.5" fill="#20241E">Định kỳ — 781 tr</text>
+                <text x="149" y="57" font-size="9" fill="#6B7268">thành viên · phí nền tảng · CPD</text>
+                <rect x="132" y="72" width="10" height="10" rx="2" fill="#E9F0EA" stroke="#CFD9CF"/><text x="149" y="81" font-size="10.5" fill="#20241E">Một lần — 639 tr</text>
+                <text x="149" y="95" font-size="9" fill="#6B7268">buổi lẻ · khóa học · thiết bị</text>
+              </svg>
+            </div>
+
+            <div class="chartbox"><h4>So sánh trung tâm — doanh thu tháng 8</h4><span class="cap">Triệu đồng · ba trung tâm đạt chuẩn</span>
+              <div class="barrow"><span class="bn">TT Gò Vấp</span><span class="bt"><i style="width:100%"></i></span><span class="bv">186 tr</span></div>
+              <div class="barrow"><span class="bn">TT Biên Hòa</span><span class="bt"><i style="width:63%"></i></span><span class="bv">117 tr</span></div>
+              <div class="barrow"><span class="bn">TT Thủ Đức</span><span class="bt"><i style="width:78%"></i></span><span class="bv">145 tr</span></div>
+              <div class="legend" style="margin-top:9px">TT Biên Hòa dưới ngưỡng công suất 60% → đã sinh việc cho Điều phối theo Sổ Gia Quy Q-07.</div>
+            </div>
+
+            <div class="chartbox"><h4>Phễu chuyển đổi</h4><span class="cap">Từ người quan tâm đến người thực hành — quý III/2026</span>
+              <div class="funnel">
+                <div class="fstep"><span class="fb" style="width:100%">12.400</span><span class="fl">người quan tâm</span></div>
+                <div class="fstep"><span class="fb" style="width:74%">2.180</span><span class="fl">khách đặt lần đầu</span><span class="fr">17,6%</span></div>
+                <div class="fstep"><span class="fb" style="width:52%">1.548</span><span class="fl">gia đình thành viên</span><span class="fr">71,0%</span></div>
+                <div class="fstep"><span class="fb" style="width:32%">214</span><span class="fl">học viên mới</span><span class="fr">13,8%</span></div>
+                <div class="fstep"><span class="fb" style="width:18%">37</span><span class="fl">người thực hành mới</span><span class="fr">17,3%</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="panel" style="margin-top:14px"><h3>🗺 Phân bố mạng lưới theo tỉnh <span class="sub">— tầng 3 xem chi tiết, lọc theo trung tâm · người thực hành · khoảng thời gian</span></h3>
+            <div class="barrow"><span class="bn">TP.HCM</span><span class="bt"><i style="width:100%"></i></span><span class="bv">612 người</span></div>
+            <div class="barrow"><span class="bn">Đồng Nai</span><span class="bt"><i style="width:44%"></i></span><span class="bv">271 người</span></div>
+            <div class="barrow"><span class="bn">Bình Dương</span><span class="bt"><i style="width:36%"></i></span><span class="bv">218 người</span></div>
+            <div class="barrow"><span class="bn">43 tỉnh khác</span><span class="bt"><i style="width:71%"></i></span><span class="bv">436 người</span></div>
+          </div>
+        </div>
       </div>
       <div class="dview" id="hq-cen">
         <div class="panel"><h3>🏠 Hệ thống trung tâm</h3>
@@ -2120,6 +2317,14 @@ const ct=document.getElementById('cat-tabs');
   document.getElementById(b.dataset.s).classList.add('on');
 }));
 
+
+/* subtabs dashboard tầng 1 / tầng 2 (Quản trị THD) */
+const hqov=document.getElementById('hqov-tabs');
+[...hqov.querySelectorAll('button')].forEach(b=>b.addEventListener('click',()=>{
+  [...hqov.querySelectorAll('button')].forEach(x=>x.classList.remove('on')); b.classList.add('on');
+  ['hqov-t1','hqov-t2'].forEach(id=>document.getElementById(id).classList.remove('on'));
+  document.getElementById(b.dataset.s).classList.add('on');
+}));
 
 /* fin subtabs */
 const ft=document.getElementById('fin-tabs');

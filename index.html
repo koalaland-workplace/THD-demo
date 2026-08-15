@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>THÁI HƯNG ĐƯỜNG — Hồ sơ giới thiệu đối tác</title>
-<meta name="description" content="Thái Hưng Đường — Ngôi nhà trăm năm của sức khỏe Việt. Bản đồ đề án tổng thể 2026–2035, phân tích năm trụ cột, demo nền tảng vận hành năm cánh cửa và khung chuẩn hóa dữ liệu · quy trình · đào tạo.">
+<meta name="description" content="Thái Hưng Đường — Ngôi nhà trăm năm của sức khỏe Việt. Bản đồ đề án tổng thể 2026–2035, phân tích năm trụ cột, demo nền tảng vận hành, danh mục dịch vụ &amp; sản phẩm, kiến trúc platform và khung chuẩn hóa dữ liệu · quy trình · đào tạo.">
 <meta property="og:title" content="THÁI HƯNG ĐƯỜNG — Hồ sơ giới thiệu đối tác">
-<meta property="og:description" content="Bản đồ đề án tổng thể 2026–2035 · Phân tích năm trụ cột · Demo nền tảng vận hành · Khung chuẩn hóa Dữ liệu, Quy trình &amp; Đào tạo.">
+<meta property="og:description" content="Bản đồ đề án tổng thể 2026–2035 · Phân tích năm trụ cột · Demo nền tảng vận hành · Danh mục dịch vụ &amp; sản phẩm · Kiến trúc THD Platform · Khung chuẩn hóa Dữ liệu, Quy trình &amp; Đào tạo.">
 <meta property="og:type" content="website">
 <link rel="icon" type="image/png" href="assets/favicon.png">
 <link rel="apple-touch-icon" href="assets/favicon.png">
@@ -52,6 +52,11 @@ a{color:var(--mid)}
 .sec-head h2{font-size:22px;color:var(--primary);margin-top:6px}
 .sec-head p{color:var(--muted);font-size:14px;margin-top:6px;max-width:70ch}
 .cards{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:stretch}
+.cards.deep{grid-template-columns:1fr 1fr;margin-top:20px}
+.grouphead{display:flex;align-items:baseline;gap:12px;margin:34px 0 4px}
+.grouphead b{font-family:var(--disp);font-size:12px;font-weight:800;color:var(--primary);letter-spacing:.14em;text-transform:uppercase;white-space:nowrap}
+.grouphead span{font-size:12.5px;color:var(--muted)}
+.grouphead:after{content:"";flex:1;height:1px;background:var(--line)}
 .doc .tag{display:inline-block;background:var(--gtint);border:1px solid #E7DBB4;color:var(--gold-d);font-family:var(--disp);font-size:9px;font-weight:800;letter-spacing:.12em;padding:3px 8px;border-radius:999px;margin-bottom:9px}
 .doc{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px;box-shadow:var(--shadow);display:flex;flex-direction:column;position:relative;overflow:hidden;transition:transform .18s ease,box-shadow .18s ease}
 .doc:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(20,46,29,.16)}
@@ -100,7 +105,9 @@ a{color:var(--mid)}
 .copy{border-top:1px solid #24492F;text-align:center;font-size:11.5px;padding:13px;color:#7E9587;margin-top:30px}
 
 @media(max-width:820px){
-  .cards{grid-template-columns:1fr}
+  .cards,.cards.deep{grid-template-columns:1fr}
+  .grouphead{flex-wrap:wrap;gap:4px}
+  .grouphead:after{display:none}
 }
 @media(max-width:900px){
   .rooms,.doors{grid-template-columns:1fr 1fr}
@@ -142,10 +149,11 @@ a{color:var(--mid)}
   <div class="wrap">
     <div class="sec-head">
       <div class="eyebrow">Bắt đầu từ đây</div>
-      <h2>Bốn tài liệu — một câu chuyện</h2>
-      <p>Đọc theo thứ tự: <b>đề án</b> vẽ bức tranh lớn — <b>phân tích năm trụ cột</b> nói thẳng đang đứng ở đâu, tiền chảy thế nào và giá trị nằm ở chỗ nào — <b>demo</b> cho thấy hệ thống trông ra sao khi vận hành — <b>khung chuẩn hóa</b> là phần móng phải làm trước tiên.</p>
+      <h2>Sáu tài liệu — một câu chuyện</h2>
+      <p>Hai tài liệu đầu dành cho buổi gặp: <b>đề án</b> vẽ bức tranh lớn, <b>demo</b> cho thấy hệ thống trông ra sao khi vận hành. Bốn tài liệu sau dành cho phần bàn việc — <b>giá trị nằm ở đâu</b>, <b>bán những gì</b>, <b>xây hệ thống ra sao</b>, và <b>bắt đầu từ đâu</b>.</p>
     </div>
 
+    <div class="grouphead" style="margin-top:6px"><b>Trình bày với đối tác</b><span>mở hai tài liệu này trong buổi gặp</span></div>
     <div class="cards">
       <article class="doc">
         <div class="num">TÀI LIỆU 01</div>
@@ -163,6 +171,23 @@ a{color:var(--mid)}
 
       <article class="doc">
         <div class="num">TÀI LIỆU 02</div>
+        <h3>Demo nền tảng vận hành<br>Một nền tảng — năm cánh cửa</h3>
+        <p>Bản demo tương tác của hệ điều hành THD. Chọn vai trò để bước vào đúng cánh cửa của vai trò đó, xem trên laptop – tablet – điện thoại.</p>
+        <ul>
+          <li>Website công khai · App Khách hàng</li>
+          <li>App Cộng tác viên · Cổng Trung tâm</li>
+          <li>Quản trị THD — Mười con số · phân quyền · gác cổng</li>
+          <li>Đổi thiết bị &amp; giao diện ngay trong demo</li>
+        </ul>
+        <a class="btn gold" href="THD_Demo_Nen_Tang_Van_Hanh.html">▶ Trải nghiệm demo</a>
+        <div class="meta">Bấm được · số liệu minh họa · chưa nối dữ liệu thật</div>
+      </article>
+    </div>
+
+    <div class="grouphead"><b>Tài liệu chuyên sâu</b><span>dành cho phần bàn việc — Hội đồng, nhà đầu tư, đội triển khai</span></div>
+    <div class="cards deep">
+      <article class="doc">
+        <div class="num">TÀI LIỆU 03</div>
         <h3>Phân tích năm trụ cột<br>Giá trị · dòng tiền · nhân bản</h3>
         <p>Chẩn đoán thẳng thắn hiện trạng: từng trụ đang ở mức trưởng thành nào, tiền vào từ đâu, vì sao bánh đà chưa quay và điều gì thực sự làm tăng giá trị doanh nghiệp.</p>
         <ul>
@@ -176,24 +201,38 @@ a{color:var(--mid)}
       </article>
 
       <article class="doc">
-        <div class="num">TÀI LIỆU 03</div>
-        <h3>Demo nền tảng vận hành<br>Một nền tảng — năm cánh cửa</h3>
-        <p>Bản demo tương tác của hệ điều hành THD. Chọn vai trò để bước vào đúng cánh cửa của vai trò đó, xem trên laptop – tablet – điện thoại.</p>
+        <div class="num">TÀI LIỆU 04</div>
+        <h3>Danh mục<br>Dịch vụ &amp; sản phẩm</h3>
+        <p>THD hiện bán công sức theo buổi. Tài liệu này đóng gói cùng một tri thức thành sáu nhóm giá trị cho sáu nhóm người mua — bốn trong sáu nhóm chưa khai thác.</p>
         <ul>
-          <li>Website công khai · App Khách hàng</li>
-          <li>App Cộng tác viên · Cổng Trung tâm</li>
-          <li>Quản trị THD — Mười con số · phân quyền · gác cổng</li>
-          <li>Đổi thiết bị &amp; giao diện ngay trong demo</li>
+          <li>Sáu nguyên tắc thiết kế · ít mà sâu</li>
+          <li>Dịch vụ lẻ · gói thành viên · đào tạo 5 bậc</li>
+          <li>Thiết bị · phí nền tảng · B2B &amp; nhượng quyền</li>
+          <li>Khung giá · danh mục kiểm soát pháp lý</li>
         </ul>
-        <a class="btn gold" href="THD_Demo_Nen_Tang_Van_Hanh.html">▶ Trải nghiệm demo</a>
-        <div class="meta">Bấm được · số liệu minh họa · chưa nối dữ liệu thật</div>
+        <a class="btn" href="THD_Danh_Muc_San_Pham_Dich_Vu.html">Mở danh mục →</a>
+        <div class="meta">6 nhóm · thứ tự ưu tiên triển khai</div>
       </article>
 
       <article class="doc">
-        <div class="num">TÀI LIỆU 04</div>
+        <div class="num">TÀI LIỆU 05</div>
+        <h3>Kiến trúc THD Platform<br>Năm cấu phần</h3>
+        <p>Bản đặc tả kỹ thuật của hệ thống trong Demo: mỗi cấu phần dành cho ai, gồm những gì, ai sửa được phần nào và dữ liệu chảy giữa chúng ra sao.</p>
+        <ul>
+          <li>Website tổng · Health OS — mục tiêu 1 triệu người dùng</li>
+          <li>Cổng Cộng đồng — biến người học thành người hành nghề</li>
+          <li>Trung tâm: landing riêng + 10 phân hệ quản trị</li>
+          <li>Management: 6 nhóm riêng của trung ương · dashboard 3 tầng</li>
+        </ul>
+        <a class="btn" href="THD_Kien_Truc_Platform.html">Mở kiến trúc →</a>
+        <div class="meta">Đọc kèm Demo — mỗi cấu phần là một cánh cửa</div>
+      </article>
+
+      <article class="doc">
+        <div class="num">TÀI LIỆU 06</div>
         <h3>Khung chuẩn hóa<br>Dữ liệu · Quy trình · Đào tạo</h3>
         <div class="tag">HẠNG MỤC CẦN LÀM</div>
-        <p>Phần móng của ba tài liệu trên. Mười lăm mục quy định cách đặt mã, ghi dữ liệu, viết quy trình và đo chuẩn đầu ra — làm trước khi ca đầu tiên được ghi.</p>
+        <p>Phần móng của cả bộ hồ sơ. Mười lăm mục quy định cách đặt mã, ghi dữ liệu, viết quy trình và đo chuẩn đầu ra — làm trước khi ca đầu tiên được ghi.</p>
         <ul>
           <li>Hệ mã định danh · từ điển dữ liệu · 4 mức mật</li>
           <li>Khung SOP 7 phần cho Sổ Gia Quy 8 mảng</li>
@@ -207,7 +246,7 @@ a{color:var(--mid)}
 
     <div class="note" style="margin-top:24px">
       <span class="i">💡</span>
-      <div><b>Gợi ý cho buổi trình bày:</b> mở <b>Bản đồ đề án</b> trước để thống nhất bức tranh lớn (10–15 phút), rồi chuyển sang <b>Demo nền tảng</b> và đi lần lượt năm cánh cửa để đối tác thấy đề án đã có hình hài cụ thể. Hai tài liệu còn lại dành cho phần bàn việc: <b>Phân tích năm trụ cột</b> khi đối tác hỏi “giá trị nằm ở đâu”, <b>Khung chuẩn hóa</b> khi hỏi “bắt đầu từ đâu”.</div>
+      <div><b>Gợi ý cho buổi trình bày:</b> mở <b>Bản đồ đề án</b> trước để thống nhất bức tranh lớn (10–15 phút), rồi chuyển sang <b>Demo nền tảng</b> và đi lần lượt năm cánh cửa để đối tác thấy đề án đã có hình hài cụ thể. Ba tài liệu chuyên sâu dành cho phần bàn việc: <b>Phân tích năm trụ cột</b> khi đối tác hỏi “giá trị nằm ở đâu”, <b>Danh mục dịch vụ &amp; sản phẩm</b> khi hỏi “bán những gì”, <b>Kiến trúc Platform</b> khi hỏi “hệ thống gồm những gì”, <b>Khung chuẩn hóa</b> khi hỏi “bắt đầu từ đâu”.</div>
     </div>
   </div>
 </section>
@@ -274,6 +313,8 @@ a{color:var(--mid)}
           <li><a href="THD_De_An_Tong_The.html">Bản đồ đề án tổng thể 2026–2035</a></li>
           <li><a href="THD_Phan_Tich_5_Tru_Cot.html">Phân tích năm trụ cột — giá trị &amp; dòng tiền</a></li>
           <li><a href="THD_Demo_Nen_Tang_Van_Hanh.html">Demo nền tảng vận hành</a></li>
+          <li><a href="THD_Danh_Muc_San_Pham_Dich_Vu.html">Danh mục dịch vụ &amp; sản phẩm</a></li>
+          <li><a href="THD_Kien_Truc_Platform.html">Kiến trúc THD Platform — 5 cấu phần</a></li>
           <li><a href="THD_Chuan_Hoa_Du_Lieu.html">Khung chuẩn hóa Dữ liệu · Quy trình · Đào tạo</a></li>
         </ul>
       </div>

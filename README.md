@@ -10,10 +10,12 @@ Bộ tài liệu trình bày trực tuyến của **Thái Hưng Đường — Ng
 
 | | Tài liệu | Nội dung |
 |---|---|---|
-| 🏠 | [**Trang chính**](https://koalaland-workplace.github.io/THD-demo/) | Điểm vào — giới thiệu tổng quan và dẫn tới bốn tài liệu |
+| 🏠 | [**Trang chính**](https://koalaland-workplace.github.io/THD-demo/) | Điểm vào — giới thiệu tổng quan và dẫn tới sáu tài liệu |
 | 📘 | [**Bản đồ đề án tổng thể 2026–2035**](https://koalaland-workplace.github.io/THD-demo/THD_De_An_Tong_The.html) | Toàn cảnh chiến lược: kiến trúc, 12 chương nghiệp vụ, lộ trình 18 tháng |
 | 📊 | [**Phân tích năm trụ cột**](https://koalaland-workplace.github.io/THD-demo/THD_Phan_Tich_5_Tru_Cot.html) | Giá trị · dòng tiền · khả năng nhân bản — dành cho Hội đồng & nhà đầu tư |
 | 🖥️ | [**Demo nền tảng vận hành**](https://koalaland-workplace.github.io/THD-demo/THD_Demo_Nen_Tang_Van_Hanh.html) | Bản demo tương tác — một nền tảng, năm cánh cửa |
+| 🛍️ | [**Danh mục Dịch vụ & Sản phẩm**](https://koalaland-workplace.github.io/THD-demo/THD_Danh_Muc_San_Pham_Dich_Vu.html) | Sáu nhóm danh mục theo bản chất doanh thu — bốn nhóm chưa khai thác |
+| 🧩 | [**Kiến trúc THD Platform**](https://koalaland-workplace.github.io/THD-demo/THD_Kien_Truc_Platform.html) | Đặc tả năm cấu phần — chính là năm cánh cửa trong Demo |
 | ⚙️ | [**Khung chuẩn hóa Dữ liệu · Quy trình · Đào tạo**](https://koalaland-workplace.github.io/THD-demo/THD_Chuan_Hoa_Du_Lieu.html) | Hạng mục cần làm — 15 mục quy chuẩn, ba đợt triển khai |
 
 Không cần cài đặt gì. Mở bằng trình duyệt trên laptop, tablet hoặc điện thoại.
@@ -120,9 +122,44 @@ Hai ranh giới quản trị được thể hiện rõ ngay trong giao diện:
 
 ---
 
-## ⚙️ Tài liệu 04 — Khung chuẩn hóa Dữ liệu · Quy trình · Đào tạo
+## 🛍️ Tài liệu 04 — Danh mục Dịch vụ & Sản phẩm
 
-**Đây là hạng mục cần làm** — phần móng của ba tài liệu trên. Chuẩn hóa không phải công việc kỹ thuật: mỗi trường dữ liệu được định nghĩa đúng, mỗi quy trình được chép theo khung, mỗi khóa học được đo bằng chuẩn đầu ra là một mảnh tri thức của người thầy được giữ lại ở dạng truyền được cho người sau.
+THD hiện **bán công sức theo buổi**. Tài liệu này đóng gói cùng một tri thức thành sáu nhóm giá trị cho sáu nhóm người mua.
+
+| # | Nhóm | Ai trả | Nhịp thu | Trạng thái |
+|---|---|---|---|---|
+| 1 | Dịch vụ chăm sóc | Gia đình | Theo buổi / liệu trình | Đang chạy |
+| 2 | Gói thành viên | Gia đình | Hằng tháng | **Chưa có** |
+| 3 | Đào tạo | Học viên & người hành nghề | Theo khóa + hằng năm | Một phần |
+| 4 | Thiết bị & sản phẩm | Gia đình · người thực hành · trung tâm | Một lần + vật tư | Rủi ro hồ sơ |
+| 5 | Dịch vụ nền tảng | Người thực hành & trung tâm | Hằng tháng | **Chưa có** |
+| 6 | B2B & nhượng quyền | Doanh nghiệp · địa phương | Hợp đồng + % doanh thu | **Chưa có** |
+
+> **Đọc ra điều gì:** bốn trên sáu nhóm chưa khai thác — và ba trong bốn nhóm đó là doanh thu định kỳ hoặc doanh thu đòn bẩy.
+
+Kèm sáu nguyên tắc thiết kế (mỗi món gắn một bậc · không bán thứ chưa đủ hồ sơ · ít mà sâu · giá trong khung · người thực hành hưởng 70–80%), chính sách giá, danh mục kiểm soát pháp lý, vòng đời danh mục và thứ tự ưu tiên triển khai.
+
+---
+
+## 🧩 Tài liệu 05 — Kiến trúc THD Platform
+
+Bản đặc tả kỹ thuật của chính hệ thống trong Demo — **năm cấu phần tương ứng năm cánh cửa**.
+
+| # | Cấu phần | Dành cho | Điểm cốt lõi |
+|---|---|---|---|
+| 1 | **Website tổng** | Công chúng | Thương hiệu · blog · phổ cập · cổng đăng ký |
+| 2 | **THD Health OS** | Gia đình | “Sổ sức khỏe của cả nhà” — mục tiêu 1 triệu người dùng · 5 tab |
+| 3 | **THD Cộng đồng** | CTV & học viên | Sáu nhóm A–F · chương trình KTV tự do được cấp bậc |
+| 4 | **THD Trung tâm** | Chủ nhượng quyền | Landing riêng + 10 phân hệ quản trị |
+| 5 | **THD Management** | Trung ương | 6 nhóm riêng · dashboard ba tầng · quản trị bằng ngoại lệ |
+
+Đọc kèm Demo: mỗi cấu phần là một cánh cửa trong bản demo tương tác.
+
+---
+
+## ⚙️ Tài liệu 06 — Khung chuẩn hóa Dữ liệu · Quy trình · Đào tạo
+
+**Đây là hạng mục cần làm** — phần móng của cả bộ hồ sơ. Chuẩn hóa không phải công việc kỹ thuật: mỗi trường dữ liệu được định nghĩa đúng, mỗi quy trình được chép theo khung, mỗi khóa học được đo bằng chuẩn đầu ra là một mảnh tri thức của người thầy được giữ lại ở dạng truyền được cho người sau.
 
 ### Mười lăm mục, ba khối
 
@@ -153,7 +190,9 @@ Hai ranh giới quản trị được thể hiện rõ ngay trong giao diện:
 ├── THD_De_An_Tong_The.html           # Tài liệu 01 — Bản đồ đề án tổng thể
 ├── THD_Phan_Tich_5_Tru_Cot.html      # Tài liệu 02 — Phân tích năm trụ cột
 ├── THD_Demo_Nen_Tang_Van_Hanh.html   # Tài liệu 03 — Demo nền tảng vận hành
-├── THD_Chuan_Hoa_Du_Lieu.html        # Tài liệu 04 — Khung chuẩn hóa
+├── THD_Danh_Muc_San_Pham_Dich_Vu.html # Tài liệu 04 — Danh mục dịch vụ & sản phẩm
+├── THD_Kien_Truc_Platform.html       # Tài liệu 05 — Kiến trúc THD Platform
+├── THD_Chuan_Hoa_Du_Lieu.html        # Tài liệu 06 — Khung chuẩn hóa
 └── assets/
     ├── logo-thd.jpg                  # Logo dùng cho trang chính
     ├── favicon.png                   # Icon trình duyệt
