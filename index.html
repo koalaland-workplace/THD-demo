@@ -8,6 +8,8 @@
 <meta property="og:title" content="THÁI HƯNG ĐƯỜNG — Hồ sơ giới thiệu đối tác">
 <meta property="og:description" content="Bản đồ đề án tổng thể 2026–2035 · Demo nền tảng vận hành — một nền tảng, năm cánh cửa.">
 <meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -31,10 +33,11 @@ a{color:var(--mid)}
 /* ===== HERO ===== */
 .hero{background:radial-gradient(1200px 600px at 78% -10%,#2250337a,transparent 60%),linear-gradient(160deg,var(--deep),#1B3D26 62%,#24512F);color:#fff;padding:56px 0 60px;position:relative;overflow:hidden}
 .hero:after{content:"";position:absolute;inset:auto 0 0 0;height:3px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
-.brandline{display:flex;align-items:center;gap:13px;margin-bottom:30px}
-.seal{width:48px;height:48px;flex:none}
-.brandline .bn{font-family:var(--disp);font-weight:800;font-size:15px;letter-spacing:.16em;color:var(--gold-l);line-height:1.25}
-.brandline .bs{font-size:10.5px;color:#93A899;letter-spacing:.05em}
+.brandline{display:flex;align-items:center;gap:16px;margin-bottom:30px}
+.seal{width:72px;height:72px;flex:none;border-radius:50%;display:block;box-shadow:0 0 0 1.5px rgba(201,162,39,.55)}
+.brandline .bn{font-family:var(--disp);font-weight:800;font-size:19px;letter-spacing:.15em;color:var(--gold-l);line-height:1.25}
+.brandline .bs{font-size:12px;color:#93A899;letter-spacing:.04em;margin-top:2px}
+@media(max-width:600px){.seal{width:56px;height:56px}.brandline .bn{font-size:15px}.brandline .bs{font-size:10.5px}}
 .hero h1{font-size:clamp(28px,5vw,46px);font-weight:900;line-height:1.14;letter-spacing:-.01em;max-width:16ch}
 .hero h1 em{font-style:normal;color:var(--gold-l)}
 .hero .lede{margin-top:16px;max-width:62ch;font-size:16px;color:#D7E2DA;font-weight:300}
@@ -109,11 +112,7 @@ a{color:var(--mid)}
 <header class="hero">
   <div class="wrap">
     <div class="brandline">
-      <svg class="seal" viewBox="0 0 100 100" aria-hidden="true">
-        <circle cx="50" cy="50" r="46" fill="none" stroke="#C9A227" stroke-width="2.5"/>
-        <circle cx="50" cy="50" r="39" fill="none" stroke="#C9A227" stroke-width="1" opacity=".55"/>
-        <text x="50" y="59" text-anchor="middle" font-family="Montserrat,serif" font-size="30" font-weight="800" fill="#E8D48A">THD</text>
-      </svg>
+      <img class="seal" src="assets/logo-thd.jpg" width="72" height="72" alt="Logo Thái Hưng Đường — Đào tạo Y sư chích lễ hiện đại">
       <div>
         <div class="bn">THÁI HƯNG ĐƯỜNG</div>
         <div class="bs">Ngôi nhà trăm năm của sức khỏe Việt</div>
