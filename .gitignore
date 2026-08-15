@@ -1,0 +1,11 @@
+# macOS
+.DS_Store
+._*
+
+# Tài liệu nguồn nội bộ — không công bố
+*.docx
+*.doc
+*.pdf
+
+# Media nguồn (đã nhúng/trích xuất vào bản web)
+MEDIA/

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>THÁI HƯNG ĐƯỜNG — Hồ sơ giới thiệu đối tác</title>
+<meta name="description" content="Thái Hưng Đường — Ngôi nhà trăm năm của sức khỏe Việt. Bản đồ đề án tổng thể 2026–2035 và demo nền tảng vận hành năm cánh cửa.">
+<meta property="og:title" content="THÁI HƯNG ĐƯỜNG — Hồ sơ giới thiệu đối tác">
+<meta property="og:description" content="Bản đồ đề án tổng thể 2026–2035 · Demo nền tảng vận hành — một nền tảng, năm cánh cửa.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --deep:#142E1D; --primary:#1B3D26; --mid:#2C5F3A; --soft:#4C7A5B;
+  --gold:#C9A227; --gold-l:#E8D48A; --gold-d:#8F741C;
+  --paper:#F7F5EE; --card:#FFFFFF; --tint:#E9F0EA; --gtint:#F8F2DE;
+  --ink:#20241E; --muted:#6B7268; --line:#E7E4D8;
+  --disp:'Montserrat','Be Vietnam Pro',sans-serif;
+  --ui:'Be Vietnam Pro','Segoe UI',Roboto,Arial,sans-serif;
+  --shadow:0 2px 14px rgba(20,46,29,.09);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--ui);background:var(--paper);color:var(--ink);font-size:15px;line-height:1.62}
+h1,h2,h3,h4,.disp{font-family:var(--disp)}
+a{color:var(--mid)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+.eyebrow{font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-d);font-weight:800}
+
+/* ===== HERO ===== */
+.hero{background:radial-gradient(1200px 600px at 78% -10%,#2250337a,transparent 60%),linear-gradient(160deg,var(--deep),#1B3D26 62%,#24512F);color:#fff;padding:56px 0 60px;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;inset:auto 0 0 0;height:3px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.brandline{display:flex;align-items:center;gap:13px;margin-bottom:30px}
+.seal{width:48px;height:48px;flex:none}
+.brandline .bn{font-family:var(--disp);font-weight:800;font-size:15px;letter-spacing:.16em;color:var(--gold-l);line-height:1.25}
+.brandline .bs{font-size:10.5px;color:#93A899;letter-spacing:.05em}
+.hero h1{font-size:clamp(28px,5vw,46px);font-weight:900;line-height:1.14;letter-spacing:-.01em;max-width:16ch}
+.hero h1 em{font-style:normal;color:var(--gold-l)}
+.hero .lede{margin-top:16px;max-width:62ch;font-size:16px;color:#D7E2DA;font-weight:300}
+.motto{margin-top:22px;display:inline-block;border-left:3px solid var(--gold);padding:4px 0 4px 14px;font-family:var(--disp);font-size:13.5px;color:var(--gold-l);letter-spacing:.02em}
+.stats{margin-top:34px;display:flex;gap:34px;flex-wrap:wrap}
+.stats div b{display:block;font-family:var(--disp);font-size:26px;font-weight:800;color:#fff;line-height:1.1}
+.stats div span{font-size:11.5px;color:#93A899;letter-spacing:.04em}
+
+/* ===== CARDS ===== */
+.sec{padding:52px 0}
+.sec-head{margin-bottom:26px}
+.sec-head h2{font-size:22px;color:var(--primary);margin-top:6px}
+.sec-head p{color:var(--muted);font-size:14px;margin-top:6px;max-width:70ch}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.doc{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px;box-shadow:var(--shadow);display:flex;flex-direction:column;position:relative;overflow:hidden;transition:transform .18s ease,box-shadow .18s ease}
+.doc:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(20,46,29,.16)}
+.doc:before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--gold),var(--gold-l))}
+.doc .num{font-family:var(--disp);font-size:11px;font-weight:800;color:var(--gold-d);letter-spacing:.18em}
+.doc h3{font-size:20px;color:var(--primary);margin:8px 0 10px;line-height:1.28}
+.doc p{font-size:13.5px;color:var(--muted);flex:1}
+.doc ul{list-style:none;margin:16px 0 20px;display:flex;flex-direction:column;gap:7px}
+.doc li{font-size:12.5px;color:var(--ink);padding-left:18px;position:relative}
+.doc li:before{content:"◆";position:absolute;left:0;top:0;color:var(--gold);font-size:9px;line-height:2}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--primary);color:#fff;font-family:var(--disp);font-weight:800;font-size:12.5px;letter-spacing:.05em;padding:12px 20px;border-radius:9px;text-decoration:none;align-self:flex-start;transition:background .15s}
+.btn:hover{background:var(--mid);color:#fff}
+.btn.gold{background:var(--gold);color:var(--deep)}
+.btn.gold:hover{background:var(--gold-l)}
+.meta{margin-top:14px;font-size:11px;color:var(--muted);letter-spacing:.03em}
+
+/* ===== HOUSE ===== */
+.house{background:var(--tint);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.rooms{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.room{background:#fff;border:1px solid var(--line);border-radius:13px;padding:17px 15px}
+.room b{display:block;font-family:var(--disp);font-size:12.5px;color:var(--primary);letter-spacing:.06em;margin-bottom:6px}
+.room span{font-size:12px;color:var(--muted);line-height:1.5}
+.layers{margin-top:22px;display:grid;gap:8px}
+.layer{display:flex;gap:14px;align-items:baseline;background:#fff;border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:10px;padding:11px 15px}
+.layer .lv{font-family:var(--disp);font-size:10px;font-weight:800;color:var(--gold-d);letter-spacing:.14em;flex:none;width:70px}
+.layer .lt{font-size:13px}
+.layer .lt b{color:var(--primary)}
+.layer .lt span{color:var(--muted);font-size:12.5px}
+
+/* ===== DOORS ===== */
+.doors{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.door{background:#fff;border:1px solid var(--line);border-radius:13px;padding:16px 14px;text-align:center}
+.door .ic{font-size:24px;display:block;margin-bottom:8px}
+.door b{display:block;font-size:12.5px;color:var(--primary);font-family:var(--disp);margin-bottom:5px}
+.door span{font-size:11.5px;color:var(--muted);line-height:1.45}
+
+/* ===== NOTE / FOOT ===== */
+.note{background:var(--gtint);border:1px solid #E7DBB4;border-radius:13px;padding:16px 19px;font-size:12.5px;color:#6E5A16;display:flex;gap:11px;align-items:flex-start}
+.note .i{font-size:17px;flex:none}
+.foot{background:var(--deep);color:#B9C9BE;padding:38px 0 0;font-size:13px}
+.foot-in{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:26px}
+.foot h4{color:var(--gold-l);font-family:var(--disp);font-size:14px;margin-bottom:10px}
+.foot li{list-style:none;margin:5px 0}
+.foot a{color:#B9C9BE;text-decoration:none}
+.foot a:hover{color:var(--gold-l)}
+.copy{border-top:1px solid #24492F;text-align:center;font-size:11.5px;padding:13px;color:#7E9587;margin-top:30px}
+
+@media(max-width:900px){
+  .cards{grid-template-columns:1fr}
+  .rooms,.doors{grid-template-columns:1fr 1fr}
+  .foot-in{grid-template-columns:1fr}
+  .layer{flex-direction:column;gap:4px}
+  .layer .lv{width:auto}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="brandline">
+      <svg class="seal" viewBox="0 0 100 100" aria-hidden="true">
+        <circle cx="50" cy="50" r="46" fill="none" stroke="#C9A227" stroke-width="2.5"/>
+        <circle cx="50" cy="50" r="39" fill="none" stroke="#C9A227" stroke-width="1" opacity=".55"/>
+        <text x="50" y="59" text-anchor="middle" font-family="Montserrat,serif" font-size="30" font-weight="800" fill="#E8D48A">THD</text>
+      </svg>
+      <div>
+        <div class="bn">THÁI HƯNG ĐƯỜNG</div>
+        <div class="bs">Ngôi nhà trăm năm của sức khỏe Việt</div>
+      </div>
+    </div>
+
+    <div class="eyebrow" style="color:var(--gold-l)">Hồ sơ giới thiệu đối tác · 2026–2035</div>
+    <h1>Biến di sản của một người thầy thành <em>thể chế</em></h1>
+    <p class="lede">Làm thế nào để phương pháp rèn qua hàng chục nghìn ca thật, cộng đồng 2.000+ học viên và niềm tin xã hội trở thành một hệ thống phục vụ hàng triệu gia đình — hợp pháp, có bằng chứng, có lợi nhuận và trường tồn sau người sáng lập.</p>
+    <div class="motto">“Thông thì khỏe. Cùng nhau thì hưng. Có nhà thì bền.”</div>
+
+    <div class="stats">
+      <div><b>5</b><span>GIAN NHÀ</span></div>
+      <div><b>4</b><span>TẦNG QUẢN TRỊ</span></div>
+      <div><b>12</b><span>CHƯƠNG ĐỀ ÁN</span></div>
+      <div><b>5</b><span>CÁNH CỬA NỀN TẢNG</span></div>
+      <div><b>18</b><span>THÁNG · 5 CỔNG KIỂM SOÁT</span></div>
+    </div>
+  </div>
+</header>
+
+<!-- ===== HAI TÀI LIỆU ===== -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Bắt đầu từ đây</div>
+      <h2>Hai tài liệu — một câu chuyện</h2>
+      <p>Tài liệu thứ nhất trả lời <b>“xây cái gì và xây thế nào”</b>. Tài liệu thứ hai cho thấy <b>hệ thống ấy trông ra sao khi vận hành</b> — bấm được, xem được, trên từng vai trò.</p>
+    </div>
+
+    <div class="cards">
+      <article class="doc">
+        <div class="num">TÀI LIỆU 01</div>
+        <h3>Bản đồ đề án tổng thể<br>2026–2035</h3>
+        <p>Toàn cảnh chiến lược trong một trang: kiến trúc ngôi nhà, bốn tầng quản trị, mười hai chương nghiệp vụ và lộ trình 18 tháng với năm cổng kiểm soát.</p>
+        <ul>
+          <li>Kiến trúc 5 gian nhà · 4 tầng quản trị</li>
+          <li>Truyền thông · CSKH · Nhân lực · Sản phẩm</li>
+          <li>Đào tạo 5 bậc · Kinh doanh · Vận hành 8 mảng</li>
+          <li>Nhượng quyền · Thu hút đầu tư · Nghiên cứu khoa học</li>
+        </ul>
+        <a class="btn" href="THD_De_An_Tong_The.html">Mở bản đồ đề án →</a>
+        <div class="meta">Trang cuộn · có mục lục điều hướng · in được ra PDF</div>
+      </article>
+
+      <article class="doc">
+        <div class="num">TÀI LIỆU 02</div>
+        <h3>Demo nền tảng vận hành<br>Một nền tảng — năm cánh cửa</h3>
+        <p>Bản demo tương tác của hệ điều hành THD. Chọn vai trò để bước vào đúng cánh cửa của vai trò đó, xem trên laptop – tablet – điện thoại.</p>
+        <ul>
+          <li>Website công khai · App Khách hàng</li>
+          <li>App Cộng tác viên · Cổng Trung tâm</li>
+          <li>Quản trị THD — Mười con số · phân quyền · gác cổng</li>
+          <li>Đổi thiết bị &amp; giao diện ngay trong demo</li>
+        </ul>
+        <a class="btn gold" href="THD_Demo_Nen_Tang_Van_Hanh.html">▶ Trải nghiệm demo</a>
+        <div class="meta">Bấm được · số liệu minh họa · chưa nối dữ liệu thật</div>
+      </article>
+    </div>
+
+    <div class="note" style="margin-top:24px">
+      <span class="i">💡</span>
+      <div><b>Gợi ý cho buổi trình bày:</b> mở <b>Bản đồ đề án</b> trước để thống nhất bức tranh lớn (10–15 phút), rồi chuyển sang <b>Demo nền tảng</b> và đi lần lượt năm cánh cửa để đối tác thấy đề án đã có hình hài cụ thể.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== NGÔI NHÀ ===== -->
+<section class="sec house">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Kiến trúc</div>
+      <h2>Năm gian nhà dưới một mái</h2>
+      <p>Nguyên tắc xuyên suốt: <b>FOUNDER → METHOD → NETWORK → DATA → INSTITUTION</b>. Không biến Nhà sáng lập thành nhà quản trị; xây hệ quản trị mạnh xung quanh năng lực xuất sắc của Nhà sáng lập để năng lực ấy được nhân bản.</p>
+    </div>
+
+    <div class="rooms">
+      <div class="room"><b>THD CARE</b><span>Chăm sóc dự phòng, cơ xương khớp, phục hồi, người cao tuổi, chăm tại nhà.</span></div>
+      <div class="room"><b>THD ACADEMY</b><span>Truyền nghề 5 bậc, chứng nhận, bồi dưỡng thường niên (CPD).</span></div>
+      <div class="room"><b>THD TECH</b><span>Thiết bị đo lường sức khỏe đã kiểm chứng, hồ sơ tuân thủ theo model.</span></div>
+      <div class="room"><b>THD LAB</b><span>Chuẩn hóa quy trình, ghi nhận kết quả, nghiên cứu &amp; công bố.</span></div>
+      <div class="room"><b>THD DIGITAL</b><span>Health OS, hồ sơ gia đình, công cụ cho người thực hành, trợ lý AI.</span></div>
+    </div>
+
+    <div class="layers">
+      <div class="layer"><span class="lv">TẦNG 1</span><span class="lt"><b>Triết lý &amp; tinh thần</b> — <span>Sứ mệnh · Tầm nhìn · 5 giá trị · Gia quy đạo đức · Nghi thức. Cô giữ, gần như không đổi.</span></span></div>
+      <div class="layer"><span class="lv">TẦNG 2</span><span class="lt"><b>Chính sách lớn</b> — <span>An toàn &amp; chuyển viện · Ngôn từ &amp; bằng chứng · Giá vừa túi tiền · 70–80% cho người thực hành · Không đa cấp. Xem lại mỗi năm.</span></span></div>
+      <div class="layer"><span class="lv">TẦNG 3</span><span class="lt"><b>Chiến lược</b> — <span>5 gian nhà · Nấc thang 10 bậc · Founding 2000 · Bằng-chứng-hóa · Vô hình trước – cổ phần sau. Xem lại mỗi quý.</span></span></div>
+      <div class="layer"><span class="lv">TẦNG 4</span><span class="lt"><b>Vận hành — 8 mảng</b> — <span>Nội dung · Đào tạo · Chăm sóc khách · Thiết bị · Nền tảng &amp; dữ liệu · Tài chính · Chất lượng · Cộng đồng. Đổi nhanh theo thực tế.</span></span></div>
+    </div>
+    <p style="margin-top:14px;font-size:12.5px;color:var(--muted)">Quy tắc duy nhất: <b>tầng dưới không được làm trái tầng trên</b> — nhờ vậy việc hằng ngày dù đổi liên tục, hồn của ngôi nhà không bao giờ trôi.</p>
+  </div>
+</section>
+
+<!-- ===== NĂM CÁNH CỬA ===== -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Nền tảng vận hành</div>
+      <h2>Năm cánh cửa trong bản demo</h2>
+      <p>Cùng một nền tảng, mỗi vai trò bước vào một cánh cửa riêng — thấy đúng việc của mình, không thấy việc của người khác.</p>
+    </div>
+    <div class="doors">
+      <div class="door"><span class="ic">🌐</span><b>Website công khai</b><span>Đặt chăm sóc, tìm trung tâm, blog, video, khóa học, thiết bị.</span></div>
+      <div class="door"><span class="ic">📱</span><b>App Khách hàng</b><span>Lịch hẹn, sức khỏe nhà tôi, nhật ký chăm sóc, khóa của tôi.</span></div>
+      <div class="door"><span class="ic">🤲</span><b>App Cộng tác viên</b><span>Ghi liệu ca 0·30·90, tra cứu quy trình, trợ lý AI, cố vấn ca khó.</span></div>
+      <div class="door"><span class="ic">🏠</span><b>Cổng Trung tâm</b><span>Lịch, khách hàng, doanh thu – chi phí – thuế, nhân sự, kho.</span></div>
+      <div class="door"><span class="ic">🛡️</span><b>Quản trị THD</b><span>Mười con số, phân quyền, gác cổng ngôn từ, kho SHTT.</span></div>
+    </div>
+    <div class="note" style="margin-top:22px">
+      <span class="i">🛡️</span>
+      <div><b>Ranh giới quản trị được thể hiện ngay trong demo:</b> phần nào <b>trung tâm tự quyết</b>, phần nào <b>theo chuẩn THD — không chỉnh sửa</b>. Đây là cơ chế giữ chuẩn khi ngôi nhà nhân bản.</div>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-in">
+      <div>
+        <h4>THÁI HƯNG ĐƯỜNG</h4>
+        <p>Ngôi nhà trăm năm của sức khỏe Việt.<br>“Thông thì khỏe. Cùng nhau thì hưng. Có nhà thì bền.”</p>
+      </div>
+      <div>
+        <h4>Tài liệu</h4>
+        <ul>
+          <li><a href="THD_De_An_Tong_The.html">Bản đồ đề án tổng thể 2026–2035</a></li>
+          <li><a href="THD_Demo_Nen_Tang_Van_Hanh.html">Demo nền tảng vận hành</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Liên hệ</h4>
+        <ul>
+          <li>📍 50/6 đường số 5, cư xá Chu Văn An, P.26, Q. Bình Thạnh, TP.HCM</li>
+          <li>📞 Hotline &amp; Zalo: <a href="tel:0971313931">097 131 39 31</a></li>
+          <li>✉️ giaiphaptansovang@gmail.com</li>
+          <li>▶ YouTube: <a href="https://www.youtube.com/@hocvienthaihungduong/videos" target="_blank" rel="noopener">@hocvienthaihungduong</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">© Thái Hưng Đường. Thương hiệu, giáo trình và quy trình thuộc sở hữu của Người sáng lập &amp; Công ty — đã nộp đơn bảo hộ nhãn hiệu. · Tài liệu lưu hành phục vụ trao đổi hợp tác.</div>
+  </div>
+</footer>
+
+</body>
+</html>
