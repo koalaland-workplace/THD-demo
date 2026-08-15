@@ -60,6 +60,19 @@ a{color:var(--mid)}
 .role.on{font-weight:600}
 .role:hover{background:#27543A}
 .role.on{background:var(--gold);color:var(--deep);border-color:var(--gold)}
+@media(max-width:1400px){
+ .topbar-in{flex-wrap:wrap;row-gap:8px}
+ .roles{order:5;width:100%;margin-left:0;overflow-x:auto;justify-content:flex-start;padding-bottom:2px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+ .roles::-webkit-scrollbar{display:none}
+ .navback{margin-left:auto}
+}
+@media(max-width:1000px){
+ .topbar .tt span{display:none}
+}
+@media(max-width:600px){
+ /* dien thoai: chi giu loi ve Trang chinh — tu do di tiep toi ba tai lieu con lai */
+ .navback a:not(:first-child){display:none}
+}
 .demo-note{background:var(--gold);color:var(--deep);text-align:center;font-size:11px;font-weight:600;letter-spacing:.05em;padding:4px}
 
 /* ===== SCREEN SHELLS ===== */
@@ -714,11 +727,6 @@ body.dev-phone .bot-panel{position:fixed;left:50%;transform:translateX(-50%);rig
 .footer-demo{max-width:1180px;margin:0 auto;padding:10px 20px 40px;text-align:center;font-size:11.5px;color:var(--muted)}
 
 @media(max-width:1000px){
- .topbar-in{flex-wrap:wrap;row-gap:8px}
- .topbar .tt span{display:none}
- .roles{order:5;width:100%;margin-left:0;overflow-x:auto;justify-content:flex-start;padding-bottom:2px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
- .roles::-webkit-scrollbar{display:none}
- .navback{margin-left:auto}
  .hero-in{grid-template-columns:1fr}
  .grid3{grid-template-columns:1fr}
  .kpis{grid-template-columns:repeat(2,1fr)}
@@ -747,6 +755,7 @@ body.dev-phone .bot-panel{position:fixed;left:50%;transform:translateX(-50%);rig
     <div class="navback">
       <a href="index.html" title="Về trang chính">&#8592; Trang chính</a>
       <a href="THD_De_An_Tong_The.html" title="Mở bản đồ đề án tổng thể">&#9776; Đề án</a>
+      <a href="THD_Phan_Tich_5_Tru_Cot.html" title="Mở bản phân tích năm trụ cột">&#128202; Phân tích</a>
       <a href="THD_Chuan_Hoa_Du_Lieu.html" title="Mở khung chuẩn hóa dữ liệu, quy trình &amp; đào tạo">&#9881; Chuẩn hóa</a>
     </div>
     <div class="devbar" title="Chế độ xem">

@@ -10,8 +10,9 @@ Bộ tài liệu trình bày trực tuyến của **Thái Hưng Đường — Ng
 
 | | Tài liệu | Nội dung |
 |---|---|---|
-| 🏠 | [**Trang chính**](https://koalaland-workplace.github.io/THD-demo/) | Điểm vào — giới thiệu tổng quan và dẫn tới ba tài liệu |
+| 🏠 | [**Trang chính**](https://koalaland-workplace.github.io/THD-demo/) | Điểm vào — giới thiệu tổng quan và dẫn tới bốn tài liệu |
 | 📘 | [**Bản đồ đề án tổng thể 2026–2035**](https://koalaland-workplace.github.io/THD-demo/THD_De_An_Tong_The.html) | Toàn cảnh chiến lược: kiến trúc, 12 chương nghiệp vụ, lộ trình 18 tháng |
+| 📊 | [**Phân tích năm trụ cột**](https://koalaland-workplace.github.io/THD-demo/THD_Phan_Tich_5_Tru_Cot.html) | Giá trị · dòng tiền · khả năng nhân bản — dành cho Hội đồng & nhà đầu tư |
 | 🖥️ | [**Demo nền tảng vận hành**](https://koalaland-workplace.github.io/THD-demo/THD_Demo_Nen_Tang_Van_Hanh.html) | Bản demo tương tác — một nền tảng, năm cánh cửa |
 | ⚙️ | [**Khung chuẩn hóa Dữ liệu · Quy trình · Đào tạo**](https://koalaland-workplace.github.io/THD-demo/THD_Chuan_Hoa_Du_Lieu.html) | Hạng mục cần làm — 15 mục quy chuẩn, ba đợt triển khai |
 
@@ -59,7 +60,46 @@ Khép lại bằng **lộ trình 18 tháng với năm cổng kiểm soát**.
 
 ---
 
-## 🖥️ Tài liệu 02 — Demo nền tảng vận hành
+## 📊 Tài liệu 02 — Phân tích năm trụ cột
+
+Chẩn đoán thẳng thắn hiện trạng, dành cho Hội đồng và nhà đầu tư. Mười sáu mục trả lời: từng trụ đang ở đâu, tiền chảy thế nào, vì sao bánh đà chưa quay, và điều gì thực sự làm tăng giá trị doanh nghiệp.
+
+### Thang đo 6 mức — dùng chung cho cả năm trụ
+
+| Mức | Tên gọi | Hệ quả kinh tế |
+|---|---|---|
+| 0 | Chưa có | Không tạo doanh thu |
+| 1 | Cá nhân hóa | Doanh thu trần thấp, dừng khi người đó dừng |
+| 2 | Lặp lại được | Tuyến tính theo số người, biên lợi nhuận thấp |
+| **3** | **Chuẩn hóa** | **Điểm bùng — bắt đầu nhân bản được, mở khóa nhượng quyền** |
+| 4 | Có dữ liệu & tự cải tiến | Biên lợi nhuận tăng, rủi ro giảm, tăng bội số định giá |
+| 5 | Thể chế | Tài sản định giá và chuyển nhượng độc lập |
+
+> **Ngưỡng quyết định:** dưới mức 3, mọi tăng trưởng đều tuyến tính và tốn kém — thêm doanh thu phải thêm người, thêm giờ của cô.
+
+### Năm nút thắt — và thứ tự gỡ đúng
+
+| Nút thắt | Gỡ bằng |
+|---|---|
+| ① Không có nơi ghi dữ liệu | Health OS cấp 1 |
+| ② Quy trình chưa thành văn | 5 quy trình MSK + Sổ Gia Quy |
+| ③ Mạng lưới alumni ngủ đông | Census + chương trình nâng cấp danh giá |
+| ④ Doanh thu một lớp | Gói thành viên + phí nền tảng |
+| ⑤ Rủi ro pháp lý & ngôn từ | Gác cổng ngôn từ + hồ sơ tuân thủ |
+
+Gỡ ① và ② trước vì chúng mở khóa mọi thứ khác; ③ làm song song vì sinh tiền nhanh nhất; ⑤ phải xong sớm vì là rủi ro sống còn; ④ tự đến khi ba nút kia đã gỡ.
+
+### Ba kịch bản 2026–2030
+
+| Kịch bản | Kết cục |
+|---|---|
+| **A · Giữ nguyên** | Tuyến tính — khi cô nghỉ, giá trị gần như về 0 |
+| **B · Nền tảng hóa** *(đề án này)* | Lũy tiến — 50–60% doanh thu định kỳ, giá trị độc lập với người sáng lập |
+| **C · Mở nhanh không nền** | Rủi ro cao — một sự cố ở một cơ sở làm tổn thương toàn thương hiệu |
+
+---
+
+## 🖥️ Tài liệu 03 — Demo nền tảng vận hành
 
 Một nền tảng, năm cánh cửa. Chọn vai trò trên thanh trên cùng để bước vào đúng cánh cửa của vai trò đó; đổi được chế độ xem **laptop · tablet · điện thoại** và đổi giao diện ngay trong demo.
 
@@ -80,9 +120,9 @@ Hai ranh giới quản trị được thể hiện rõ ngay trong giao diện:
 
 ---
 
-## ⚙️ Tài liệu 03 — Khung chuẩn hóa Dữ liệu · Quy trình · Đào tạo
+## ⚙️ Tài liệu 04 — Khung chuẩn hóa Dữ liệu · Quy trình · Đào tạo
 
-**Đây là hạng mục cần làm** — phần móng của hai tài liệu trên. Chuẩn hóa không phải công việc kỹ thuật: mỗi trường dữ liệu được định nghĩa đúng, mỗi quy trình được chép theo khung, mỗi khóa học được đo bằng chuẩn đầu ra là một mảnh tri thức của người thầy được giữ lại ở dạng truyền được cho người sau.
+**Đây là hạng mục cần làm** — phần móng của ba tài liệu trên. Chuẩn hóa không phải công việc kỹ thuật: mỗi trường dữ liệu được định nghĩa đúng, mỗi quy trình được chép theo khung, mỗi khóa học được đo bằng chuẩn đầu ra là một mảnh tri thức của người thầy được giữ lại ở dạng truyền được cho người sau.
 
 ### Mười lăm mục, ba khối
 
@@ -111,8 +151,9 @@ Hai ranh giới quản trị được thể hiện rõ ngay trong giao diện:
 .
 ├── index.html                        # Trang chính — điểm vào cho đối tác
 ├── THD_De_An_Tong_The.html           # Tài liệu 01 — Bản đồ đề án tổng thể
-├── THD_Demo_Nen_Tang_Van_Hanh.html   # Tài liệu 02 — Demo nền tảng vận hành
-├── THD_Chuan_Hoa_Du_Lieu.html        # Tài liệu 03 — Khung chuẩn hóa
+├── THD_Phan_Tich_5_Tru_Cot.html      # Tài liệu 02 — Phân tích năm trụ cột
+├── THD_Demo_Nen_Tang_Van_Hanh.html   # Tài liệu 03 — Demo nền tảng vận hành
+├── THD_Chuan_Hoa_Du_Lieu.html        # Tài liệu 04 — Khung chuẩn hóa
 └── assets/
     ├── logo-thd.jpg                  # Logo dùng cho trang chính
     ├── favicon.png                   # Icon trình duyệt

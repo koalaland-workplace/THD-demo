@@ -55,6 +55,8 @@ img{max-width:100%;display:block}
 .dropdown i{font-size:10.5px;color:var(--muted);display:block;font-style:normal}
 .home-btn{background:rgba(255,255,255,.10);color:#CFE0D4;font-weight:700;font-size:10.5px;padding:7px 11px;border-radius:7px;white-space:nowrap;letter-spacing:.05em;text-decoration:none;display:inline-flex;align-items:center;gap:5px}
 .home-btn:hover{background:rgba(255,255,255,.18);color:#fff}
+.navgroup>button.ng-doc{color:var(--gold-l);border:1px solid rgba(201,162,39,.45)}
+.navgroup>button.ng-doc:hover,.navgroup.open>button.ng-doc{background:rgba(201,162,39,.16);color:#fff}
 .std-btn{background:transparent;border:1px solid rgba(201,162,39,.55);color:var(--gold-l);font-weight:700;font-size:10.5px;padding:6px 11px;border-radius:7px;white-space:nowrap;letter-spacing:.05em;text-decoration:none;display:inline-flex;align-items:center;gap:5px}
 .std-btn:hover{background:rgba(201,162,39,.16);color:#fff}
 .demo-btn{background:var(--gold);color:var(--deep);font-weight:800;font-size:10.5px;padding:7px 12px;border-radius:7px;white-space:nowrap;letter-spacing:.05em;text-decoration:none;display:inline-flex;align-items:center;gap:5px}
@@ -247,9 +249,13 @@ td b{color:var(--primary)}
    <a href="#dautu"><span class="dn">10</span><span><b>Thu hút đầu tư</b><i>6 tài sản vô hình · 5 nguồn vốn</i></span></a>
    <a href="#khoahoc"><span class="dn">11</span><span><b>Nghiên cứu khoa học</b><i>từ ca chăm sóc đến bằng chứng</i></span></a>
   </div></div>
+ <div class="navgroup"><button class="ng-doc" onclick="tg(this)">Tài liệu <span class="car">&#9662;</span></button>
+  <div class="dropdown" style="right:0;left:auto">
+   <a href="THD_Phan_Tich_5_Tru_Cot.html"><span class="dn">&#128202;</span><span><b>Phân tích năm trụ cột</b><i>giá trị · dòng tiền · nhân bản</i></span></a>
+   <a href="THD_Chuan_Hoa_Du_Lieu.html"><span class="dn">&#9881;</span><span><b>Khung chuẩn hóa</b><i>dữ liệu · quy trình · đào tạo</i></span></a>
+  </div></div>
  </div>
  <a class="home-btn" href="index.html">&#8592; TRANG CHÍNH</a>
- <a class="std-btn" href="THD_Chuan_Hoa_Du_Lieu.html">&#9881; CHUẨN HÓA</a>
  <a class="demo-btn" href="THD_Demo_Nen_Tang_Van_Hanh.html" target="_blank" rel="noopener">&#9654; DEMO</a>
  <button class="print-btn" onclick="window.print()">IN / PDF</button>
 </div></nav>
@@ -340,6 +346,14 @@ document.querySelectorAll('.dropdown a').forEach(function(a){a.addEventListener(
   <div class="card"><h3 style="font-size:13px">THD LAB</h3><p>Chuẩn hóa quy trình, ghi nhận kết quả, nghiên cứu &amp; công bố.</p></div>
   <div class="card"><h3 style="font-size:13px">THD DIGITAL</h3><p>Health OS, hồ sơ gia đình, công cụ cho người thực hành, trợ lý AI.</p></div>
  </div>
+
+ <a class="docref" href="THD_Phan_Tich_5_Tru_Cot.html">
+  <span class="di">&#128202;</span>
+  <span class="dx"><span class="tag">BẢN PHÂN TÍCH</span>
+   <b>Năm trụ cột đang ở đâu — chấm điểm theo thang 6 mức</b>
+   <i>Năm gian nhà trên là đích đến. Bản phân tích riêng chấm từng trụ theo thang trưởng thành 6 mức, chỉ ra mức 3 là điểm bùng, và vì sao dưới mức 3 mọi tăng trưởng đều tuyến tính và tốn kém.</i></span>
+  <span class="da">XEM PHÂN TÍCH →</span>
+ </a>
 
  <h3 style="font-size:15px;color:var(--primary);margin:24px 0 10px">Bốn tầng quản trị — tầng dưới không được làm trái tầng trên</h3>
  <div class="tier t1"><b>TẦNG 1 · TRIẾT LÝ &amp; TINH THẦN</b><span>Sứ mệnh · Tầm nhìn · 5 giá trị · Triết lý tên Thái–Hưng–Đường · Gia quy đạo đức · Nghi thức — <i>Cô giữ, gần như không đổi</i></span></div>
@@ -564,6 +578,14 @@ document.querySelectorAll('.dropdown a').forEach(function(a){a.addEventListener(
   <div class="card" style="background:var(--gtint);border-color:#EBDFB8"><h3 style="font-size:13px">Nguyên tắc</h3><p><b>Vô hình trước — cổ phần sau cùng.</b> Dùng tài sản vô hình đổi nguồn lực trước, doanh thu nuôi vận hành, giữ cổ phần đến khi được định giá đúng.</p></div>
  </div>
 
+ <a class="docref" href="THD_Phan_Tich_5_Tru_Cot.html">
+  <span class="di">&#128202;</span>
+  <span class="dx"><span class="tag">BẢN PHÂN TÍCH</span>
+   <b>Bản đồ dòng tiền &amp; kinh tế đơn vị — bản đầy đủ</b>
+   <i>Bảy lớp doanh thu trên được mổ xẻ chi tiết ở tài liệu riêng: ai trả, trả cho gì, trả bao lâu một lần; kinh tế đơn vị của ba đơn vị cơ sở; bảy đòn bẩy giá trị trước &amp; sau khi có nền tảng.</i></span>
+  <span class="da">XEM DÒNG TIỀN →</span>
+ </a>
+
  <div class="g3" style="margin-top:18px">
   <div class="card"><h3><span class="ic">📊</span>Kinh tế đơn vị — trung tâm mẫu</h3>
    <ul><li>Doanh thu tháng: <b>186 triệu</b> (4 mảng)</li><li>Tổng chi: 153 triệu</li><li><b>Lãi vận hành +33 triệu</b> — tháng thứ 4 có lãi</li><li>316 gia đình đang phục vụ · 4,9★</li></ul>
@@ -722,6 +744,14 @@ document.querySelectorAll('.dropdown a').forEach(function(a){a.addEventListener(
  </div></div>
  <div class="divider"></div>
 
+ <a class="docref" href="THD_Phan_Tich_5_Tru_Cot.html" style="margin-top:0">
+  <span class="di">&#128202;</span>
+  <span class="dx"><span class="tag">BẢN PHÂN TÍCH</span>
+   <b>Điều gì làm tăng giá trị doanh nghiệp — và ba kịch bản 2026–2030</b>
+   <i>Tài liệu dành cho Hội đồng &amp; nhà đầu tư: bảy yếu tố nhà đầu tư trả giá cao hơn, toán học nhân bản từ 1 đến 100 trung tâm, và ba kịch bản — giữ nguyên, nền tảng hóa, mở nhanh không nền.</i></span>
+  <span class="da">XEM ĐỊNH GIÁ →</span>
+ </a>
+
  <div class="g2">
   <div>
    <h3 style="font-size:14px;color:var(--primary);margin-bottom:9px">Sáu tài sản vô hình — đổi được gì</h3>
@@ -820,6 +850,7 @@ document.querySelectorAll('.dropdown a').forEach(function(a){a.addEventListener(
   <li>Ngôi Nhà Trăm Năm — bản trình Người sáng lập</li>
   <li>Phụ lục: 7 bản đồ vận hành</li>
   <li>Roadmap triển khai &amp; chi tiết hạng mục (Excel)</li>
+  <li>Phân tích năm trụ cột — giá trị &amp; dòng tiền</li>
   <li>Khung chuẩn hóa Dữ liệu · Quy trình · Đào tạo</li>
   <li>Demo nền tảng vận hành (HTML tương tác)</li></ul></div>
  <div><h4>Nguyên tắc nền</h4><ul>
