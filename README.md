@@ -10,12 +10,13 @@ Bộ tài liệu trình bày trực tuyến của **Thái Hưng Đường — Ng
 
 | | Tài liệu | Nội dung |
 |---|---|---|
-| 🏠 | [**Trang chính**](https://koalaland-workplace.github.io/THD-demo/) | Điểm vào — giới thiệu tổng quan và dẫn tới sáu tài liệu |
+| 🏠 | [**Trang chính**](https://koalaland-workplace.github.io/THD-demo/) | Điểm vào — giới thiệu tổng quan và dẫn tới bảy tài liệu |
 | 📘 | [**Bản đồ đề án tổng thể 2026–2035**](https://koalaland-workplace.github.io/THD-demo/THD_De_An_Tong_The.html) | Toàn cảnh chiến lược: kiến trúc, 12 chương nghiệp vụ, lộ trình 18 tháng |
 | 📊 | [**Phân tích năm trụ cột**](https://koalaland-workplace.github.io/THD-demo/THD_Phan_Tich_5_Tru_Cot.html) | Giá trị · dòng tiền · khả năng nhân bản — dành cho Hội đồng & nhà đầu tư |
 | 🖥️ | [**Demo nền tảng vận hành**](https://koalaland-workplace.github.io/THD-demo/THD_Demo_Nen_Tang_Van_Hanh.html) | Bản demo tương tác — một nền tảng, năm cánh cửa |
 | 🛍️ | [**Danh mục Dịch vụ & Sản phẩm**](https://koalaland-workplace.github.io/THD-demo/THD_Danh_Muc_San_Pham_Dich_Vu.html) | Sáu nhóm danh mục theo bản chất doanh thu — bốn nhóm chưa khai thác |
 | 🧩 | [**Kiến trúc THD Platform**](https://koalaland-workplace.github.io/THD-demo/THD_Kien_Truc_Platform.html) | Đặc tả năm cấu phần — chính là năm cánh cửa trong Demo |
+| 📋 | [**Đề xuất triển khai giai đoạn khởi động**](https://koalaland-workplace.github.io/THD-demo/THD_De_Xuat_Trien_Khai.html) | **Bước đi đầu tiên** — 3 hạng mục · 16 tuần · 535 tr chưa gồm thuế |
 | ⚙️ | [**Khung chuẩn hóa Dữ liệu · Quy trình · Đào tạo**](https://koalaland-workplace.github.io/THD-demo/THD_Chuan_Hoa_Du_Lieu.html) | Hạng mục cần làm — 15 mục quy chuẩn, ba đợt triển khai |
 
 Không cần cài đặt gì. Mở bằng trình duyệt trên laptop, tablet hoặc điện thoại.
@@ -159,6 +160,7 @@ Bản đặc tả kỹ thuật của chính hệ thống trong Demo — **năm c
 
 ## ⚙️ Tài liệu 06 — Khung chuẩn hóa Dữ liệu · Quy trình · Đào tạo
 
+
 **Đây là hạng mục cần làm** — phần móng của cả bộ hồ sơ. Chuẩn hóa không phải công việc kỹ thuật: mỗi trường dữ liệu được định nghĩa đúng, mỗi quy trình được chép theo khung, mỗi khóa học được đo bằng chuẩn đầu ra là một mảnh tri thức của người thầy được giữ lại ở dạng truyền được cho người sau.
 
 ### Mười lăm mục, ba khối
@@ -182,6 +184,39 @@ Bản đặc tả kỹ thuật của chính hệ thống trong Demo — **năm c
 
 ---
 
+## 📋 Tài liệu 07 — Đề xuất triển khai giai đoạn khởi động
+
+**Bước đi đầu tiên của lộ trình 18 tháng.** Ba hạng mục nền móng — làm xong là Thái Hưng Đường bắt đầu vận hành bài bản được.
+
+| HM | Hạng mục | Thời gian | Chi phí |
+|---|---|---|---|
+| 1 | Khảo sát, phân tích & đánh giá — tư vấn, lập phương án tổng thể | 2 tuần đầu · trọn gói | **35 tr** |
+| 2 | Hạ tầng công nghệ cơ bản — 5 cấu phần THD Platform | 16 tuần · 4 giai đoạn | **300 tr** |
+| 3 | Xử lý & chuẩn hóa dữ liệu — thu thập, chuẩn hóa, kho tri thức | 16 tuần song song | **200 tr** |
+| | **TỔNG** *(chưa gồm thuế GTGT 7%)* | **16 tuần ± 2** | **535 tr** |
+
+### Tiến độ — hạng mục 2 và 3 chạy song song
+
+| Tuần | Hạ tầng công nghệ | Chuẩn hóa dữ liệu | Kết quả đạt được |
+|---|---|---|---|
+| 1–2 | *Hạng mục 1 — khảo sát & lập phương án tổng thể* | | Chốt phạm vi & kế hoạch phối hợp |
+| 1–5 | GĐ1 · Kiến trúc dữ liệu · UI/UX · Website tổng · bảo mật | GĐ1 · Kiểm kê & bộ chuẩn dữ liệu | Website chạy thật & an toàn |
+| 5–9 | GĐ2 · Health OS · Cổng Cộng đồng | GĐ2 · Thu thập & khảo sát học viên | **Ghi được dữ liệu ca đầu tiên** |
+| 9–13 | GĐ3 · Cổng Trung tâm · AI · tích hợp | GĐ3 · Chuẩn hóa & nhập liệu | Trung tâm vận hành được |
+| 13–16 | GĐ4 · Management · Dashboard · bàn giao | GĐ4 · Kho tri thức & chuyển giao | Quản trị bằng số liệu |
+
+**Thanh toán năm đợt** gắn với sản phẩm bàn giao nghiệm thu được: 92,5 — 92,5 — 125 — 135 — 90 (triệu đồng).
+
+### Bao gồm / chưa bao gồm
+
+✅ Phân tích, thiết kế, phát triển, kiểm thử · chuẩn hóa & nhập liệu · đào tạo từng nhóm vai · bàn giao mã nguồn và quyền quản trị · **bảo hành 6 tháng** · họp phối hợp hằng tuần.
+
+🚫 Thuế GTGT 7% · hạ tầng bên thứ ba (tên miền, hosting, Google API, mô hình AI, ZNS/SMS) · thiết kế nhận diện thương hiệu · xây dựng & vận hành kênh mạng xã hội, Podcast · **sản xuất video, hình ảnh** · pháp lý & luật sư · phần cứng · quảng cáo trả tiền.
+
+> **Tinh thần hợp tác:** đây không phải hợp đồng làm xong rồi bàn giao là hết. Các giai đoạn tiếp theo — vận hành thực tế, nâng cấp, mở rộng nhượng quyền, sản xuất tư liệu — hai bên cùng thảo luận và thống nhất **ngay trong quá trình thực hiện 16 tuần**, dựa trên nhu cầu thật phát sinh từ vận hành.
+
+---
+
 ## 📁 Cấu trúc thư mục
 
 ```
@@ -193,6 +228,7 @@ Bản đặc tả kỹ thuật của chính hệ thống trong Demo — **năm c
 ├── THD_Danh_Muc_San_Pham_Dich_Vu.html # Tài liệu 04 — Danh mục dịch vụ & sản phẩm
 ├── THD_Kien_Truc_Platform.html       # Tài liệu 05 — Kiến trúc THD Platform
 ├── THD_Chuan_Hoa_Du_Lieu.html        # Tài liệu 06 — Khung chuẩn hóa
+├── THD_De_Xuat_Trien_Khai.html       # Tài liệu 07 — Đề xuất triển khai
 └── assets/
     ├── logo-thd.jpg                  # Logo dùng cho trang chính
     ├── favicon.png                   # Icon trình duyệt
